@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Green #60b946 */
+/* Blue #009ede */
+/* Red #ef3729 */
+
+:root {
+  --foreground-rgb: rgb(255, 255, 255);
+  --background-start-rgb: rgb(0, 0, 0);
+  --background-end-rgb: rgb(255, 255, 255);
+
+  --primary: #181e34;
+  --secondary: #6d9834;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: rgb(0, 0, 0);
+    --background-start-rgb: rgb(217, 217, 217);
+    --background-end-rgb: rgb(255, 255, 255);
+  }
+}
+
+.fancy {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color: black;
+  /* background: #304043; */
+  background: white;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  margin: 0px auto -70px;
+  z-index: 50;
+}
+
+hr {
+  @apply border-t-2 border-[#181e34] my-2 w-full;
+}
+
+.nav-link {
+  @apply block py-2 px-3 hover:underline underline-offset-4;
+}
+
+.btn-primary {
+  @apply bg-[var(--primary)] hover:bg-sky-700 text-white font-bold py-2 px-4 rounded shadow-md;
+}
+.btn-secondary {
+  @apply bg-[var(--secondary)] hover:bg-sky-700 text-white font-bold py-2 px-4 rounded shadow-md;
+}
+
+/* Grey #181e34 */
+/* Green #6d9834 */
+
+.btn-border {
+  @apply border bg-[#45414d] border-white hover:bg-[var(--secondary)] text-white font-bold py-2 px-4 rounded shadow-md fancy;
+}
+
+.bg-primary {
+  @apply bg-[#45414d];
+}
+
+.bg-secondary {
+  @apply bg-[#209b97];
+}
+
+.text-primary {
+  @apply text-[#181e34];
+}
+
+.text-secondary {
+  @apply text-[#2bb7b2];
+}
+
+.border-primary {
+  @apply border-[#181e34];
+}
+
+.border-secondary {
+  @apply border-[#2bb7b2];
+}
+
+.page-heading {
+  @apply text-3xl lg:text-4xl  text-center fancy text-[#2bb7b2];
+}
+
+.h1 {
+  @apply text-4xl;
+}
+
+.h2 {
+  @apply text-3xl;
+}
+
+.h3 {
+  @apply text-2xl;
+}
+.h4 {
+  @apply text-lg;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to elements */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards; /* Adjust duration and timing as needed */
+  opacity: 0; /* Start with opacity 0 to initialize the fade-in effect */
+}
+
+/* Delay for each line */
+.delay-1 {
+  animation-delay: 0.5s; /* Delay start by 0.5 seconds for the first line */
+}
+
+.delay-2 {
+  animation-delay: 1s; /* Delay start by 1 second for the second line */
+}
+
+.delay-3 {
+  animation-delay: 1.5s; /* Delay start by 1.5 seconds for the third line */
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply animation to the heading */
+.appear {
+  animation: appear 1s ease-in-out forwards; /* Adjust duration and timing as needed */
+  opacity: 0; /* Start with opacity 0 to initialize the fade-in effect */
+}
+
+.curved-top {
+  position: relative;
+  background: #181e34;
+  height: 70px;
+  border-top-left-radius: 50% 45%;
+  border-top-right-radius: 50% 45%;
+}
+.curved-bottom {
+  position: relative;
+  background: #181e34;
+  height: 70px;
+  border-bottom-left-radius: 50% 45%;
+  border-bottom-right-radius: 50% 45%;
+  margin-top: -10px;
+}
+
+/* .overflow-x-auto::-webkit-scrollbar {
+  height: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: #4a4a4a;
+  border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #2d2d2d;
+} */
+
+/* Hide scrollbar for all browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* styles.css */
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+  animation-duration: 70s;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 20s linear infinite;
+  animation-duration: 80s;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
