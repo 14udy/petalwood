@@ -15,13 +15,13 @@ export default function Home() {
                 Welcome to your home away from home
               </h2>
               <p className="text-lg">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
+                sunt in culpa qui officia deserunt mollit anim id est laborum
               </p>
             </div>
           </div>
@@ -45,13 +45,13 @@ export default function Home() {
             <div className="max-w-xl flex flex-col items-center space-y-12">
               <h2 className="text-7xl fancy">Benefits of ownership</h2>
               <p className="text-lg">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
+                sunt in culpa qui officia deserunt mollit anim id est laborum
               </p>
               <div>
                 <button className="btn-secondary"> Discover More</button>
@@ -96,13 +96,13 @@ export default function Home() {
           </div>
           <div className="w-full flex flex-col gap-2 ">
             <p className="text-lg xl:w-8/12">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
+              sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
             <div className="flex justify-center items-center w-4/12">
               <button className="btn-secondary"> Discover More</button>
