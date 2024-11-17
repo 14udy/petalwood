@@ -1,5 +1,5 @@
 "use client"
-
+import logo from "@/public/logo.webp"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
@@ -20,11 +20,11 @@ export default function Navbar() {
     setIsOpen(!isOpen)
   }
   return (
-    <nav className="w-full flex items-center justify-between  z-50 text-white">
+    <nav className="w-full flex items-center justify-between bg-primary  z-50 text-white">
       <div className="flex ">
-        <Link href="/" className="flex items-center justify-center ms-6">
+        <Link href="/" className="flex items-center justify-center s">
           <Image
-            src="/images/hpp-icon.webp"
+            src={logo}
             height={688}
             width={629}
             alt="The Holiday Park People Icon"
@@ -43,12 +43,12 @@ export default function Navbar() {
               Home
             </Link>
           </li>
-          <div className="relative group">
-            <button className="flex flex-row justify-center items-center w-full  text-base  text-center  bg-transparent   lg:mt-0 focus:outline-none py-2 px-4 gap-2">
+          <li className="relative group">
+            <button className="  ">
               <Link
                 href="/our-park"
                 onClick={() => setIsOpen(false)}
-                className="btn-border flex items-center justify-center gap-1"
+                className="btn-secondary flex items-center justify-center gap-1"
               >
                 Our Park
                 <div>
@@ -77,12 +77,12 @@ export default function Navbar() {
                 />
               </ul>
             </div>
-          </div>
+          </li>
           <li>
             <Link
               href="/holiday-home-ownership"
               onClick={() => setIsOpen(false)}
-              className="btn-border"
+              className="btn-secondary"
             >
               Holiday home ownership
             </Link>
@@ -92,7 +92,7 @@ export default function Navbar() {
             <Link
               href="/holiday-homes-for-sale"
               onClick={() => setIsOpen(false)}
-              className="btn-border"
+              className="btn-secondary"
             >
               Holiday homes for sale
             </Link>
@@ -101,7 +101,7 @@ export default function Navbar() {
             <Link
               href="/our-story"
               onClick={() => setIsOpen(false)}
-              className="btn-border"
+              className="btn-secondary"
             >
               Latest news
             </Link>
@@ -153,7 +153,7 @@ export default function Navbar() {
           </a>
         </div> */}
         <Link href="/contact">
-          <span className="block py-2 px-4 btn-border me-5">Contact Us</span>
+          <span className="block py-2 px-4 btn-secondary me-5">Contact Us</span>
         </Link>
       </div>
 

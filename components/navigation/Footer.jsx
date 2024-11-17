@@ -1,5 +1,5 @@
 import Image from "next/image"
-
+import logo from "@/public/logo.webp"
 import {
   FaFacebook,
   FaInstagram,
@@ -11,11 +11,11 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="w-full   bg-[#181e34] text-white grid md:grid-cols-2 lg:grid-cols-4 p-2 gap-3 border-t border-slate-600 py-6 ">
+    <footer className="w-full   bg-primary text-white grid md:grid-cols-2 lg:grid-cols-4 p-2 gap-3 border-t border-slate-600 py-6 ">
       <div className="flex flex-col justify-between gap-2">
         <div>
           <Image
-            src="/images/hpp-logo-t.webp"
+            src={logo}
             alt="Holiday Park People Logo"
             height={627}
             width={455}
@@ -30,7 +30,7 @@ export default function Footer() {
         </p>
       </div>
       <div>
-        <h3 className="text-3xl text-secondary chewy ">Our Details</h3>
+        <h3 className="text-3xl text-secondary fancy ">Our Details</h3>
         <section className="space-y-1">
           <div>
             <p>Holiday Park People Limited</p>
@@ -52,7 +52,7 @@ export default function Footer() {
                 className="hover:underline underline-offset-4"
                 href="mailto:hey@holidayparkpeople.co.uk"
               >
-                hey@holidayparkpeople.co.uk
+                {/* hey@holidayparkpeople.co.uk */}
               </a>
             </p>
           </div>
@@ -101,7 +101,7 @@ export default function Footer() {
         </section>
       </div>
       <div>
-        <h3 className="text-3xl text-secondary chewy  ">Quick links</h3>
+        <h3 className="text-3xl text-secondary fancy  ">Quick links</h3>
         <ul>
           <li>
             <Link
@@ -163,7 +163,7 @@ export default function Footer() {
         </ul>
       </div>
       <div>
-        <h3 className="text-3xl text-secondary chewy  ">The Important Bits</h3>
+        <h3 className="text-3xl text-secondary fancy  ">The Important Bits</h3>
         <ul>
           {/* <li>
             <Link

@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <div>
       <Hero heading={"Grassholme Holiday Park"} />
-      <div className="flex justify-center">
-        <section className="grid xl:grid-cols-2 py-16 container">
+      <div className="flex justify-center p-2">
+        <section className="grid xl:grid-cols-2 py-16 container gap-4">
           <div className="w-full flex justify-center">
             <div className="max-w-xl flex flex-col items-center space-y-12">
-              <h2 className="text-7xl fancy">
+              <h2 className="text-4xl md:text-7xl fancy">
                 Welcome to your home away from home
               </h2>
               <p className="text-lg">
@@ -40,10 +40,12 @@ export default function Home() {
       </div>
       <HhfsSection />
       <div className="flex justify-center">
-        <section className="grid xl:grid-cols-2 py-16 container gap-4">
+        <section className="grid xl:grid-cols-2 py-16 container gap-4 p-2">
           <div className="w-full flex justify-center">
             <div className="max-w-xl flex flex-col items-center space-y-12">
-              <h2 className="text-7xl fancy">Benefits of ownership</h2>
+              <h2 className="text-4xl md:text-7xl fancy">
+                Benefits of ownership
+              </h2>
               <p className="text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -72,7 +74,7 @@ export default function Home() {
         </section>
       </div>
       <div className="flex justify-center">
-        <section className="py-16 container space-y-12">
+        <section className="py-16 container space-y-12 p-2">
           <h2 className="text-7xl text-center fancy">Discover Teesdale</h2>
           <div className="flex flex-col xl:flex-row gap-6">
             <div className="w-full xl:w-4/12">
@@ -81,7 +83,7 @@ export default function Home() {
                 alt="Grassholme Holiday Park"
                 width={1920}
                 height={1080}
-                className="rounded-2xl h-[500px]"
+                className="rounded-2xl md:h-[500px]"
               />
             </div>
             <div className="w-full xl:w-8/12">
@@ -90,11 +92,11 @@ export default function Home() {
                 alt="Grassholme Holiday Park"
                 width={1920}
                 height={1080}
-                className="rounded-2xl h-[500px]"
+                className="rounded-2xl md:h-[500px]"
               />
             </div>
           </div>
-          <div className="w-full flex flex-col gap-2 ">
+          <div className="w-full flex flex-col xl:flex-row gap-2 ">
             <p className="text-lg xl:w-8/12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -104,7 +106,7 @@ export default function Home() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
-            <div className="flex justify-center items-center w-4/12">
+            <div className="flex justify-end md:justify-center md:items-center md:w-4/12">
               <button className="btn-secondary"> Discover More</button>
             </div>
           </div>
@@ -114,7 +116,9 @@ export default function Home() {
 
       <div className="flex justify-center">
         <section className="py-16 container space-y-12 overflow-hidden">
-          <h2 className="text-7xl text-center fancy">Enjoyed by Many</h2>
+          <h2 className="text-4xl md:text-7xl text-center fancy">
+            Enjoyed by Many
+          </h2>
           <ReviewMarquee />
         </section>
       </div>
