@@ -56,8 +56,9 @@ export default function Admin() {
 
   return (
     <div className="min-h-screen">
-      <div className="mt-[70px] p-4">Admin</div>
-      <ViewCaravans session={session}/>
+      <div className="mt-[70px] p-4">
+        <ViewCaravans session={session} />
+      </div>
     </div>
   )
 }

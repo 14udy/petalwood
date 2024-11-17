@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import FormInput from "../Inputs/FormInput"
 import PasswordInput from "../Inputs/PasswordInput"
+import { supabase } from "@/Utils/Supabase/supabase"
 
 export default function LoginForm() {
   const [error, setError] = useState(null)
@@ -32,11 +33,14 @@ export default function LoginForm() {
             type="email"
             name="email"
             value={email}
-            handleChange={setEmail}
+            handleChange={(e) => setEmail(e.target.value)}
             required
             placeholder="Enter your email"
           />
-          <PasswordInput password={password} handleChange={setPassword} />
+          <PasswordInput
+            password={password}
+            handleChange={(val) => setPassword(val)}
+          />
           <button
             type="submit"
             className="mt-4 bg-secondary text-white py-2 px-4 rounded"
