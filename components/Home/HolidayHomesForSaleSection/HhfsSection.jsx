@@ -2,6 +2,8 @@ import React from "react"
 import CaravanListItem from "../../CaravanList/CaravanListItem"
 import { supabase } from "@/Utils/Supabase/supabase"
 
+export const revalidate = 0
+
 const fetchCaravans = async () => {
   try {
     // Fetch caravans with their images
