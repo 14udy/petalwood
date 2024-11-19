@@ -1,36 +1,38 @@
-import React from "react"
+"use client"
+import React, { useEffect, useState } from "react"
 import CaravanListItem from "../../CaravanList/CaravanListItem"
 import { supabase } from "@/Utils/Supabase/supabase"
 
-export const revalidate = 0
+export default function HhfsSection() {
+  const [caravans, setCaravans] = useState([])
 
-const fetchCaravans = async () => {
-  try {
-    // Fetch caravans with their images
-    const { data: caravansData, error: caravansError } = await supabase
-      .from("caravans")
-      .select(
+  useEffect(() => {
+    fetchCaravans()
+  }, [])
+
+  const fetchCaravans = async () => {
+    try {
+      // Fetch caravans with their images
+      const { data: caravansData, error: caravansError } = await supabase
+        .from("caravans")
+        .select(
+          `
+          *,
+          images (
+            id,
+            file_path
+          )
         `
-        *,
-        images (
-          id,
-          file_path
         )
-      `
-      )
-      .limit(5)
+        .limit(5)
 
-    if (caravansError) throw caravansError
-    console.log(caravansData)
-    return caravansData
-  } catch (error) {
-    console.error("Error fetching caravans:", error)
+      if (caravansError) throw caravansError
+      setCaravans(caravansData)
+    } catch (error) {
+      console.error("Error fetching caravans:", error)
+    }
   }
-}
 
-export default async function HhfsSection() {
-  const caravansData = await fetchCaravans()
-  console.log(caravansData)
   return (
     <section className="bg-primary text-white py-12 space-y-12">
       <div>
@@ -40,7 +42,7 @@ export default async function HhfsSection() {
       </div>
       {/* CARD SECTION */}
       <div className="grid md:grid-cols-2 xl:grid-cols-5 gap-8 px-8">
-        {caravansData.map((caravan) => (
+        {caravans.map((caravan) => (
           <CaravanListItem key={caravan.id} caravan={caravan} session={null} />
         ))}
       </div>
