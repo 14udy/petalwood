@@ -38,7 +38,9 @@ export default function CaravanListItem({
             </div>
             <div className="flex items-center gap-2 text-sm">
               <RiMoneyPoundBoxLine className="text-green-700 text-xl" />
-              <span className="font-medium">£{caravan.price}</span>
+              <span className="font-medium">
+                £{new Intl.NumberFormat().format(caravan.price)}
+              </span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <FaPeopleGroup className="text-green-700 text-xl" />
@@ -62,7 +64,7 @@ export default function CaravanListItem({
             </>
           ) : (
             <div className="flex justify-end gap-2 pt-2  border-t">
-              <button className="btn-secondary">Find out more</button>
+              <button className="btn-secondary">View Caravan</button>
             </div>
           )}
         </div>

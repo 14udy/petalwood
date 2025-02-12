@@ -9,6 +9,16 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "media-private.canva.com",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "media.canva.com",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
         hostname: "via.placeholder.com",
         pathname: "**",
       },

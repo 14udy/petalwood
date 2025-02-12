@@ -5,13 +5,6 @@ import Link from "next/link"
 import { useState } from "react"
 import MobileNavbar from "./MobileNavbar"
 import ServiceLinks from "./ServiceLinks"
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaSquareYoutube,
-  FaTiktok,
-} from "react-icons/fa6"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -28,61 +21,24 @@ export default function Navbar() {
             height={688}
             width={629}
             alt="The Holiday Park People Icon"
-            className="w-auto h-[50px]"
+            className="w-auto h-[70px]"
           />
         </Link>
-        <ul
-          className={`hidden lg:flex lg:gap-1 lg:items-center  text-center gap-6`}
-        >
-          <li className=" lg:hidden">
+        <ul className={`hidden lg:flex  lg:items-center  text-center `}>
+          <li>
             <Link
-              href="/"
+              href="/our-park"
               onClick={() => setIsOpen(false)}
               className="nav-link"
             >
-              Home
+              Our Park
             </Link>
-          </li>
-          <li className="relative group">
-            <button className="  ">
-              <Link
-                href="/our-park"
-                onClick={() => setIsOpen(false)}
-                className="btn-secondary flex items-center justify-center gap-1"
-              >
-                Our Park
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-4 h-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </div>
-              </Link>
-            </button>
-            <div className="absolute z-10 hidden group-hover:block  w-[300px]">
-              <ul className="p-2 bg-gray-600 shadow-lg text-start">
-                <ServiceLinks
-                  setIsOpen={setIsOpen}
-                  setShowDropdown={() => {}}
-                />
-              </ul>
-            </div>
           </li>
           <li>
             <Link
               href="/holiday-home-ownership"
               onClick={() => setIsOpen(false)}
-              className="btn-secondary"
+              className="nav-link"
             >
               Holiday home ownership
             </Link>
@@ -92,23 +48,24 @@ export default function Navbar() {
             <Link
               href="/holiday-homes-for-sale"
               onClick={() => setIsOpen(false)}
-              className="btn-secondary"
+              className="nav-link"
             >
               Holiday homes for sale
             </Link>
           </li>
           <li>
             <Link
-              href="/our-story"
+              href="/explore-the-area"
               onClick={() => setIsOpen(false)}
-              className="btn-secondary"
+              className="nav-link"
             >
-              Latest news
+              Explore the area
             </Link>
           </li>
         </ul>
         <MobileNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
+
       <div className="hidden lg:flex gap-3">
         {/* <div className=" flex  gap-2 items-center">
           <a
@@ -153,7 +110,7 @@ export default function Navbar() {
           </a>
         </div> */}
         <Link href="/contact">
-          <span className="block py-2 px-4 btn-secondary me-5">Contact Us</span>
+          <span className="block py-2 px-4 nav-link me-5">Contact Us</span>
         </Link>
       </div>
 

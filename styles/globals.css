@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,6 +15,9 @@
 
   --primary: #181e34;
   --secondary: #6d9834;
+  --secondary-hover: #3e571d;
+  --tertiary: #bfd63f;
+  --tertiary-hover: #93a828;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,7 +29,7 @@
 }
 
 .fancy {
-  font-family: "Newsreader", serif;
+  font-family: "Gilda Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -58,14 +61,14 @@ hr {
 }
 
 .nav-link {
-  @apply block py-2 px-3 hover:underline underline-offset-4;
+  @apply block py-3 px-6 bg-[var(--secondary)] text-white hover:bg-[var(--secondary-hover)] fancy text-xl;
 }
 
 .btn-primary {
   @apply bg-[var(--primary)] hover:bg-sky-700 text-white font-bold py-2 px-4 rounded shadow-md;
 }
 .btn-secondary {
-  @apply bg-[var(--secondary)] hover:bg-sky-700 text-white font-bold py-2 px-4 rounded shadow-md;
+  @apply bg-[var(--tertiary)] hover:bg-[var(--tertiary-hover)] text-black uppercase  py-2 px-4 rounded-full shadow-md;
 }
 
 /* Grey #181e34 */
@@ -80,7 +83,7 @@ hr {
 }
 
 .bg-secondary {
-  @apply bg-[#209b97];
+  @apply bg-[var(--tertiary)];
 }
 
 .btn-edit {
@@ -96,7 +99,7 @@ hr {
 }
 
 .text-secondary {
-  @apply text-[#6d9834];
+  @apply text-[var(--secondary)];
 }
 
 .border-primary {
@@ -104,7 +107,7 @@ hr {
 }
 
 .border-secondary {
-  @apply border-[#6d9834];
+  @apply border-[var(--secondary)];
 }
 
 .page-heading {
@@ -144,17 +147,6 @@ hr {
 }
 
 /* Delay for each line */
-.delay-1 {
-  animation-delay: 0.5s; /* Delay start by 0.5 seconds for the first line */
-}
-
-.delay-2 {
-  animation-delay: 1s; /* Delay start by 1 second for the second line */
-}
-
-.delay-3 {
-  animation-delay: 1.5s; /* Delay start by 1.5 seconds for the third line */
-}
 
 @keyframes appear {
   0% {
@@ -185,6 +177,18 @@ hr {
   border-bottom-left-radius: 50% 45%;
   border-bottom-right-radius: 50% 45%;
   margin-top: -10px;
+}
+
+.delay-1 {
+  animation-delay: 0.5s; /* Delay start by 0.5 seconds for the first line */
+}
+
+.delay-2 {
+  animation-delay: 1s; /* Delay start by 1 second for the second line */
+}
+
+.delay-3 {
+  animation-delay: 1.5s; /* Delay start by 1.5 seconds for the third line */
 }
 
 /* .overflow-x-auto::-webkit-scrollbar {

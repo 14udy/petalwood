@@ -2,16 +2,10 @@
 import React, { useEffect, useState } from "react"
 import { supabase } from "../../Utils/Supabase/supabase"
 import CreateCaravan from "./CreateCaravan"
-import { FaBed, FaPencil, FaPeopleGroup, FaTrash } from "react-icons/fa6"
-import { RiMoneyPoundBoxLine } from "react-icons/ri"
-import { RxWidth } from "react-icons/rx"
-import EditCaravan from "./EditCaravan"
-import DeleteCaravan from "./DeleteCaravan"
 import CaravanListItem from "../CaravanList/CaravanListItem"
 
 export default function ViewCaravans({ session }) {
   const [caravans, setCaravans] = useState([])
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
 
   useEffect(() => {
     fetchCaravans()

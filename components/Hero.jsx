@@ -7,14 +7,16 @@ export default function Hero({
   imgUrl,
   quotes = true,
   location,
+  position = "object-center",
 }) {
   return (
     <section className="relative w-full h-[60vh] ">
       <Image
-        className="object-cover object-center z-[-1] w-auto h-full "
+        className={`object-cover ${position}  z-[-1] w-auto h-full `}
         priority
         // src={`${imgUrl}`}
-        src={"https://media-public.canva.com/MADGyNcnzZY/4/screen_2x.jpg"}
+
+        src={imgUrl}
         fill
         alt={`Image of ${heading}`}
         loading="eager"
@@ -31,15 +33,13 @@ export default function Hero({
 
       <div className=" h-full flex flex-col justify-between">
         <div className="h-full  items-center flex flex-col justify-center text-center  text-white mt-[70px] space-y-2 lg:space-y-6">
-          <h1 className="text-5xl md:text-8xl font-bold appear fancy">
+          <h1 className="text-6xl md:text-8xl font-bold appear fancy">
             {heading}
           </h1>
-          <div className="space-y-4 flex flex-col p-2">
-            {" "}
-            <h1 className="text-2xl lg:text-4xl font-bold fade-in delay-1 chewy">
-              {tagline}
-            </h1>
-          </div>
+
+          <h1 className="text-3xl lg:text-6xl font-bold appear delay-1 fancy">
+            {tagline}
+          </h1>
         </div>
       </div>
     </section>

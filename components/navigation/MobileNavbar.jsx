@@ -31,79 +31,35 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
       </li>
 
       <li>
-        <div className="w-full flex justify-center items-center hover:underline underline-offset-4">
-          <span className=" py-2 px-4   flex items-center gap-2">
-            <Link href="/our-services" onClick={() => handleLinkClick()}>
-              <span className="block py-2 px-4  hover:underline underline-offset-4">
-                Our Services
-              </span>
-            </Link>
-            <button
-              className="group-hover:rotate-180 transition-all duration-300"
-              onClick={() => setShowDropdown(!showDropdown)}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                className="w-4 h-4 "
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-          </span>
-        </div>
-      </li>
-      {showDropdown && (
-        <ul className="bg-gray-700">
-          <ServiceLinks
-            setIsOpen={setIsOpen}
-            setShowDropdown={setShowDropdown}
-          />
-        </ul>
-      )}
-      <li>
-        <Link href="/our-team" onClick={() => setIsOpen(false)}>
+        <Link href="/our-park" onClick={() => setIsOpen(false)}>
           <span className="block py-2 px-4 hover:underline underline-offset-4">
-            Our Team
+            Our Park
           </span>
         </Link>
       </li>
 
       <li>
-        <Link href="/our-blog" onClick={() => setIsOpen(false)}>
+        <Link href="/holiday-home-ownership" onClick={() => setIsOpen(false)}>
           <span className="block py-2 px-4 hover:underline underline-offset-4">
-            Our Blog
+            Holiday Home Ownership
           </span>
         </Link>
       </li>
       <li>
-        <Link href="/our-story" onClick={() => setIsOpen(false)}>
+        <Link href="/holiday-homes-for-sale" onClick={() => setIsOpen(false)}>
           <span className="block py-2 px-4 hover:underline underline-offset-4">
-            Our Story
-          </span>
-        </Link>
-      </li>
-      {/* <li>
-        <Link href="/our-clients" onClick={() => setIsOpen(false)}>
-          <span className="block py-2 px-4 hover:underline underline-offset-4">
-            Our Clients
+            Holiday Homes for Sale
           </span>
         </Link>
       </li>
       <li>
-        <Link href="/our-network" onClick={() => setIsOpen(false)}>
+        <Link href="/explore-the-area" onClick={() => setIsOpen(false)}>
           <span className="block py-2 px-4 hover:underline underline-offset-4">
-            Our Network
+            Explore the Area
           </span>
         </Link>
-      </li> */}
+      </li>
+
       <li>
         <Link href="/contact" onClick={() => setIsOpen(false)}>
           <span className="block py-2 px-4 hover:underline underline-offset-4">

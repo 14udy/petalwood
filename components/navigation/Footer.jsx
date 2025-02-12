@@ -1,9 +1,13 @@
 import Image from "next/image"
 import logo from "@/public/logo.webp"
 import {
+  FaEnvelope,
   FaFacebook,
   FaInstagram,
   FaLinkedin,
+  FaLocationDot,
+  FaLocationPin,
+  FaPhone,
   FaSquareYoutube,
   FaTiktok,
 } from "react-icons/fa6"
@@ -12,7 +16,7 @@ import Link from "next/link"
 export default function Footer() {
   return (
     <footer className="w-full   bg-primary text-white grid md:grid-cols-2 lg:grid-cols-4 p-2 gap-3 border-t border-slate-600 py-6 ">
-      <div className="flex flex-col justify-between gap-2">
+      {/* <div className="flex flex-col justify-between gap-2">
         <div>
           <Image
             src={logo}
@@ -26,81 +30,53 @@ export default function Footer() {
           Expert support for the UK holiday park sector <br />
         </p>
         <p className="text-sm">
-          Copyright © 2024 The Holiday Park People. All Rights Reserved
+          Copyright © {new Date().getFullYear()} Petalwood. All Rights Reserved
         </p>
-      </div>
-      <div>
-        <h3 className="text-3xl text-secondary fancy ">Our Details</h3>
+      </div> */}
+      <div className="flex flex-col justify-between gap-2 border border-white p-4 rounded">
+        <h3 className="text-3xl  fancy ">Contact Details</h3>
         <section className="space-y-1">
-          <div>
-            <p>Holiday Park People Limited</p>
-            <p>2/4 Coastal Road</p>
-            <p>Hest Bank</p>
-            <p>Lancaster</p>
-            <p>LA2 6HN</p>
-            {/* <p>
+          <div className="flex  gap-2">
+            <div className="py-2">
+              <FaLocationDot />
+            </div>
+            <div>
+              {" "}
+              <p>Petalwood</p>
+              <p>2/4 Coastal Road</p>
+              <p>Lancaster</p>
+              <p>LA2 6HN</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <div>
+              <FaPhone />
+            </div>
+            <p>
               <a
                 className="hover:underline underline-offset-4"
                 href="tel:+441461600540"
               >
                 01461 600 540
               </a>
-            </p> */}
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <div>
+              <FaEnvelope />
+            </div>
             <p>
-              {" "}
               <a
                 className="hover:underline underline-offset-4"
-                href="mailto:hey@holidayparkpeople.co.uk"
+                href="mailto:info@petalwood.co.uk"
               >
-                {/* hey@holidayparkpeople.co.uk */}
+                info@petalwood.co.uk
               </a>
             </p>
           </div>
-          <div className=" flex  gap-2 items-center">
-            <a
-              href="https://www.facebook.com/people/The-Holiday-Park-People/61563980614141"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Link to Facebook page"
-            >
-              <FaFacebook className="text-xl" />
-            </a>
-            <a
-              href="https://www.instagram.com/theholidayparkpeople"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Link to Instagram page"
-            >
-              <FaInstagram className="text-xl " />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/the-holiday-park-people/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Link to LinkedIn page"
-            >
-              <FaLinkedin className="text-xl " />
-            </a>
-            <a
-              href="https://www.youtube.com/@theholidayparkpeople"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Link to Youtube page"
-            >
-              <FaSquareYoutube className="text-xl " />
-            </a>
-            <a
-              href="https://www.tiktok.com/@holidayparkpeople"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Link to TikTok page"
-            >
-              <FaTiktok className="text-xl " />
-            </a>
-          </div>
         </section>
       </div>
-      <div>
+      {/* <div>
         <h3 className="text-3xl text-secondary fancy  ">Quick links</h3>
         <ul>
           <li>
@@ -161,9 +137,72 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
+      </div> */}
+
+      <div className="flex flex-col justify-between gap-2 border border-white p-4 rounded">
+        <h3 className="text-3xl  fancy">Office Hours</h3>
+        <div>
+          <p>Monday to Friday</p>
+          <p>9:00 am to 6:00 pm</p>
+        </div>
+        <div>
+          <p>Saturday</p>
+          <p>9:00 am to 12:00 noon</p>
+        </div>
       </div>
-      <div>
-        <h3 className="text-3xl text-secondary fancy  ">The Important Bits</h3>
+
+      <div className="flex flex-col justify-between gap-2 border border-white p-4 rounded">
+        <h3 className="text-3xl  fancy">Social Media</h3>
+        <div className=" flex  gap-2 items-center">
+          <a
+            href="https://www.facebook.com/people/The-Holiday-Park-People/61563980614141"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Facebook page"
+          >
+            <FaFacebook className="text-4xl" />
+          </a>
+          <a
+            href="https://www.instagram.com/theholidayparkpeople"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Instagram page"
+          >
+            <FaInstagram className="text-4xl " />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/the-holiday-park-people/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to LinkedIn page"
+          >
+            <FaLinkedin className="text-4xl " />
+          </a>
+          <a
+            href="https://www.youtube.com/@theholidayparkpeople"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Youtube page"
+          >
+            <FaSquareYoutube className="text-4xl " />
+          </a>
+          <a
+            href="https://www.tiktok.com/@holidayparkpeople"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to TikTok page"
+          >
+            <FaTiktok className="text-4xl " />
+          </a>
+        </div>
+        <div>
+          <p className="bg-[#026db8] text-white p-2 text-center rounded-full">
+            Tag us in your posts #petalwood
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col  gap-2 border border-white p-4 rounded">
+        <h3 className="text-3xl  fancy  ">Important Information</h3>
         <ul>
           {/* <li>
             <Link
