@@ -29,11 +29,11 @@ export default function Home() {
             <p>
               When you own a holiday home at Grassholme Holiday Park, you and
               your loved ones can escape to the Teesdale countryside at a
-              moment's notice. Whether you want to relax in your holiday home in
-              our peaceful surroundings or explore the local area including
-              Grassholme Reservoir and Grassholme Observatory, Grassholme
-              holiday park is the perfect place to relax and enjoy quality
-              family time
+              moment&apos;s notice. Whether you want to relax in your holiday
+              home in our peaceful surroundings or explore the local area
+              including Grassholme Reservoir and Grassholme Observatory,
+              Grassholme holiday park is the perfect place to relax and enjoy
+              quality family time
             </p>
           </div>
           <div className="flex w-full">

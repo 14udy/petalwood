@@ -7,7 +7,7 @@ export default function ContactSection() {
         <h3 className="text-3xl fancy">Contact Us</h3>
         <p>
           If you have any questions about owning a holiday home with us, please
-          don't hesitate to get in touch.
+          don&apos;t hesitate to get in touch.
         </p>
         <button className="btn-secondary">Contact Us</button>
       </div>

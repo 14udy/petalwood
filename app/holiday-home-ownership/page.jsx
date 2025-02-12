@@ -7,7 +7,7 @@ import HhfsSection from "@/components/Home/HolidayHomesForSaleSection/HhfsSectio
 import Link from "next/link"
 import React from "react"
 
-export default function page() {
+export default function HolidayHomeOwnership() {
   return (
     <div>
       <Hero

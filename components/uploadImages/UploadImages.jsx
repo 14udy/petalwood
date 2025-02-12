@@ -50,7 +50,7 @@ const UploadImages = ({
       // Add the new files to the imagesToUpload array
       setImagesToUpload((current) => [...current, ...mappedFiles])
     },
-    [imagesToUpload, existingImagesCount]
+    [imagesToUpload, existingImagesCount, setImagesToUpload]
   )
 
   const { getRootProps, getInputProps } = useDropzone({

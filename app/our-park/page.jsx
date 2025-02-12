@@ -7,7 +7,7 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 
-export default function page() {
+export default function OurPark() {
   return (
     <div>
       <Hero
@@ -27,7 +27,7 @@ export default function page() {
             <p>
               Situated in an Area of Outstanding Natural Beauty, Grassholme
               Holiday Park is hidden in a valley with wonderful countryside and
-              river views. Whether you're looking for a retreat to explore
+              river views. Whether you&apos;re looking for a retreat to explore
               market towns such as Barnard Castle, explore endless miles of
               countryside walks, enjoy watersports or marvel at the Dark Sky
               Discovery Site at Grassholme Reservoir, Grassholme Holiday park is

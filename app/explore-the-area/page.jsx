@@ -45,8 +45,9 @@ export default function page() {
               sailing, canoeing and paddle-boarding. 49 hectares of water lined
               up with the prevailing wind allow plenty of space for learning,
               racing or cruising. The club welcomes new members of all
-              abilities. You don't even need your own boat as the club maintains
-              a fleet of dinghies available for members to use free of charge.
+              abilities. You don&apos;t even need your own boat as the club
+              maintains a fleet of dinghies available for members to use free of
+              charge.
             </p>
             <div className="flex justify-end w-full">
               <a href="#" className="btn-secondary">
@@ -63,13 +64,14 @@ export default function page() {
         >
           <div className="relative p-6 text-black flex flex-col h-full justify-between text-center space-y-4">
             <p className="text-lg font-semibold">
-              Grassholme Holiday Park is just a stone's throw away from
+              Grassholme Holiday Park is just a stone&apos;s throw away from
               Grassholme Reservoir. It&apos;s the perfect place to enjoy the
-              sights, sounds, and scents of Teesdale's countryside on your own
-              wild adventure through a nature lover's paradise. Not only is it
-              the perfect spot for fishing, walking, and family picnics,
-              it&apos;s the perfect spot for the perfect night sky. On a clear
-              night, you will be amazed at the wonders you can see from here.
+              sights, sounds, and scents of Teesdale&apos;s countryside on your
+              own wild adventure through a nature lover&apos;s paradise. Not
+              only is it the perfect spot for fishing, walking, and family
+              picnics, it&apos;s the perfect spot for the perfect night sky. On
+              a clear night, you will be amazed at the wonders you can see from
+              here.
             </p>
             <div className="flex justify-end w-full">
               <a href="#" className="btn-secondary">

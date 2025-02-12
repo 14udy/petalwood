@@ -17,7 +17,7 @@ export default function ReviewMarquee() {
     {
       author: "Carol White",
       rating: 5,
-      content: "The best customer service I've ever experienced.",
+      content: "The best customer service I&apos;ve ever experienced.",
     },
     {
       author: "David Brown",

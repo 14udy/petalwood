@@ -1,12 +1,12 @@
 "use client"
+
 import ContactSection from "@/components/global/ContactSection/ContactSection"
 import Hero from "@/components/Hero"
-import ExploreCard from "@/components/pages/ExploreTheArea/ExploreCard"
 import React, { useState, useEffect } from "react"
 import { supabase } from "@/Utils/Supabase/supabase"
 import CaravanListItem from "@/components/CaravanList/CaravanListItem"
 
-export default function page() {
+export default function HolidayHomesForSale() {
   const [caravans, setCaravans] = useState([])
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function page() {
               <p>
                 At Grassholme Holiday Park, we are proud to offer an exceptional
                 range of holiday homes for sale, tailored to suit a variety of
-                lifestyles and preferences. Whether you're dreaming of a
+                lifestyles and preferences. Whether you&apos;re dreaming of a
                 peaceful retreat in the heart of the countryside or a vibrant
                 community where you can make lifelong memories, we have the
                 perfect holiday home for you. Our holiday homes are designed
@@ -62,7 +62,7 @@ export default function page() {
               <p>
                 Owning a holiday home at Grassholme Holiday Park means you can
                 escape whenever you like and enjoy the stunning scenery of
-                Teesdale at your leisure. Whether you're planning weekend
+                Teesdale at your leisure. Whether you&apos;re planning weekend
                 getaways, extended holidays, or a long-term stay, our holiday
                 homes offer the flexibility and freedom to make the most of
                 every moment.
