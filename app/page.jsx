@@ -7,6 +7,11 @@ import HhfsSection from "@/components/Home/HolidayHomesForSaleSection/HhfsSectio
 import Image from "next/image"
 import Link from "next/link"
 
+import image1 from "@/public/assets/page1-img1.webp"
+import image2 from "@/public/assets/page1-img2.webp"
+import image3 from "@/public/assets/page1-img3.webp"
+import image4 from "@/public/assets/page1-img4.webp"
+
 export default function Home() {
   return (
     <div>
@@ -45,7 +50,7 @@ export default function Home() {
             </Link>
           </div>
         </ImageWithTextContent>
-        <ImageWithTextImageCon url="https://media-private.canva.com/MAChiftUfA0/1/screen_2x.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250210%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250210T092405Z&X-Amz-Expires=33973&X-Amz-Signature=37b08a904d97ee880a2835385e05d50f9b1a9eed7822a2348a67ce57662b6292&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2010%20Feb%202025%2018%3A50%3A18%20GMT" />
+        <ImageWithTextImageCon url={image1} />
       </ImageWithTextSection>
 
       <HhfsSection />
@@ -77,7 +82,7 @@ export default function Home() {
             </Link>
           </div>
         </ImageWithTextContent>
-        <ImageWithTextImageCon url="https://media-private.canva.com/MABeUxn6LFw/1/screen_2x.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250210%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250210T140826Z&X-Amz-Expires=17798&X-Amz-Signature=c9487147dffccaef741f565fdc32d1fef005d68dbacfdf626b2e3e301a986808&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2010%20Feb%202025%2019%3A05%3A04%20GMT" />
+        <ImageWithTextImageCon url={image2} />
       </ImageWithTextSection>
 
       <div className="flex justify-center">
@@ -88,7 +93,7 @@ export default function Home() {
           <div className="flex flex-col xl:flex-row gap-6">
             <div className="w-full xl:w-4/12">
               <Image
-                src="https://media-private.canva.com/2Ylew/MAEE9R2Ylew/1/s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250209%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250209T215212Z&X-Amz-Expires=77944&X-Amz-Signature=070813b7f0dd8349f19546039cd6603b77c997046f660deacbad37274551be39&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2010%20Feb%202025%2019%3A31%3A16%20GMT"
+                src={image3}
                 alt="Grassholme Holiday Park"
                 width={1920}
                 height={1080}
@@ -97,7 +102,7 @@ export default function Home() {
             </div>
             <div className="w-full xl:w-8/12">
               <Image
-                src="https://media.canva.com/v2/image-resize/format:PNG/height:992/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2FrC5DE%2FMAGcwrrC5DE%2F1%2Fp.png/watermark:F/width:1600?csig=AAAAAAAAAAAAAAAAAAAAAK5i2luUmGqE1txyOX_Wm1Ki5WoRQNFYvW7EZkYrqVPt&exp=1739213856&osig=AAAAAAAAAAAAAAAAAAAAAD729k8VvPVLsEAKsBdnEPXiiegX3mj5OvBvaQv00gD0&signer=media-rpc&x-canva-quality=screen_2x"
+                src={image4}
                 alt="Grassholme Holiday Park"
                 width={1920}
                 height={1080}
