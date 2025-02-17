@@ -14,10 +14,10 @@ export default function TermsAndConditions() {
             {" "}
             www.petalwood.co.uk{" "}
           </a>
-          , operated by Petalwood Limited ("we", "our", "us"). By accessing and
-          using our website, you agree to comply with these terms and
-          conditions. If you do not accept them, please refrain from using our
-          website.
+          , operated by Petalwood Limited (&apos;we&apos;, &apos;our&apos;,
+          &apos;us&apos;). By accessing and using our website, you agree to
+          comply with these terms and conditions. If you do not accept them,
+          please refrain from using our website.
         </p>
       </section>
 

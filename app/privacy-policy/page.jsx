@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold">1. Introduction</h2>
         <p>
-          Petalwood Limited ("we", "our", "us"). We are committed to protecting
+          Petalwood Limited (&apos;we&apos;, &apos;our&apos;, &apos;us&apos;). We are committed to protecting
           and respecting your privacy. This Privacy Policy explains how we
           collect, use, disclose, and safeguard your information when you visit
           our website

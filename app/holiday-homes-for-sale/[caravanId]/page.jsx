@@ -52,6 +52,7 @@ export default async function page({ params }) {
         <div className="space-y-4">
           <div>
             <Image
+              key={caravan.images[0].id}
               src={`${supabaseUrl}/storage/v1/object/public/images/${caravan.images[0].file_path}`}
               alt={caravan.name}
               width={1920}
@@ -88,6 +89,7 @@ export default async function page({ params }) {
           <div className="grid grid-cols-3 gap-4 md:hidden">
             {caravan.images.map((image) => (
               <Image
+                key={image.id}
                 src={`${supabaseUrl}/storage/v1/object/public/images/${image.file_path}`}
                 alt={caravan.name}
                 width={1920}
@@ -101,6 +103,7 @@ export default async function page({ params }) {
           <div className="hidden md:grid grid-cols-3 gap-4">
             {caravan.images.map((image) => (
               <Image
+                key={image.id}
                 src={`${supabaseUrl}/storage/v1/object/public/images/${image.file_path}`}
                 alt={caravan.name}
                 width={1920}
