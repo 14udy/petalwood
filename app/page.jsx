@@ -7,10 +7,10 @@ import HhfsSection from "@/components/Home/HolidayHomesForSaleSection/HhfsSectio
 import Image from "next/image"
 import Link from "next/link"
 
-import image1 from "@/public/assets/page1-img1.webp"
-import image2 from "@/public/assets/page1-img2.webp"
-import image3 from "@/public/assets/page1-img3.webp"
-import image4 from "@/public/assets/page1-img4.webp"
+import image1 from "@/public/assets/images/page1-img1.webp"
+import image2 from "@/public/assets/images/page1-img2.webp"
+import image3 from "@/public/assets/images/page1-img3.webp"
+import image4 from "@/public/assets/images/page1-img4.webp"
 
 export default function Home() {
   return (
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
           <div className="flex w-full">
             <Link
-              className="btn-secondary w-full text-center"
+              className="btn-secondary w-full text-center fancy"
               href={"/our-park"}
             >
               View our park
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
           <div className="flex w-full">
             <Link
-              className="btn-secondary w-full text-center"
+              className="btn-secondary w-full text-center fancy "
               href={"/holiday-home-ownership"}
             >
               Discover More
@@ -121,7 +121,7 @@ export default function Home() {
             </p>
             <div className="flex justify-end md:justify-center md:items-center md:w-4/12">
               <Link
-                className="btn-secondary w-full text-center"
+                className="btn-secondary w-full text-center fancy"
                 href={"/explore-the-area"}
               >
                 Explore the area

@@ -10,11 +10,13 @@ export default function FormInput({
   disabled = false,
   min,
   max,
+  className,
+  rows = 3,
 }) {
   return (
     <div className="">
       {label && (
-        <label className="block text-sm font-medium text-gray-700  ">
+        <label className={`block text-sm font-medium ${className}`}>
           {label} {required && <span className="text-red-500">*</span>}
         </label>
       )}
@@ -28,6 +30,7 @@ export default function FormInput({
           required={required}
           placeholder={placeholder}
           disabled={disabled}
+          rows={rows}
         ></textarea>
       ) : (
         <input

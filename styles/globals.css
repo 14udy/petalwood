@@ -9,6 +9,7 @@
 /* Red #ef3729 */
 
 :root {
+  --font-minion-pro: "MinionPro", serif;
   --foreground-rgb: rgb(255, 255, 255);
   --background-start-rgb: rgb(0, 0, 0);
   --background-end-rgb: rgb(255, 255, 255);
@@ -29,10 +30,7 @@
 }
 
 .fancy {
-  font-family: "Gilda Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-family: var(--font-minion-pro);
 }
 
 body {
@@ -61,14 +59,14 @@ hr {
 }
 
 .nav-link {
-  @apply block py-3 px-6 bg-[var(--secondary)] text-white hover:bg-[var(--secondary-hover)] fancy text-xl;
+  @apply block py-3 px-6 bg-[var(--secondary)] text-white hover:bg-[var(--secondary-hover)] fancy text-xl font-semibold rounded-full;
 }
 
 .btn-primary {
   @apply bg-[var(--primary)] hover:bg-sky-700 text-white font-bold py-2 px-4 rounded shadow-md;
 }
 .btn-secondary {
-  @apply bg-[var(--tertiary)] hover:bg-[var(--tertiary-hover)] text-black uppercase  py-2 px-4 rounded-full shadow-md;
+  @apply bg-[var(--secondary)] hover:bg-[var(--secondary-hover)] text-white uppercase  py-2 px-4 rounded-full shadow-md;
 }
 
 /* Grey #181e34 */

@@ -5,6 +5,7 @@ import Hero from "@/components/Hero"
 import React, { useState, useEffect } from "react"
 import { supabase } from "@/Utils/Supabase/supabase"
 import CaravanListItem from "@/components/CaravanList/CaravanListItem"
+import Link from "next/link"
 
 export default function HolidayHomesForSale() {
   const [caravans, setCaravans] = useState([])
@@ -38,45 +39,46 @@ export default function HolidayHomesForSale() {
     <div>
       <Hero
         heading={"Holiday homes for sale"}
-        tagline={"in County Durham "}
+        tagline={"at Grassholme holiday park"}
         imgUrl={"https://media-public.canva.com/QvlVw/MAFluWQvlVw/1/s2.jpg"}
       />
       <section>
         <div className="w-full flex justify-center py-12">
-          <div className="container flex flex-col items-center space-y-12">
-            <div className="space-y-6 text-lg text-center ">
+          <div className="container flex flex-col items-center space-y-12 p-2">
+            <h2 className={`text-5xl md:text-6xl fancy text-start md:$ `}>
+              New and pre-loved caravans and lodges for sale in County Durham
+            </h2>
+            <div className="space-y-6 text-lg text-start ">
               <p>
-                At Grassholme Holiday Park, we are proud to offer an exceptional
-                range of holiday homes for sale, tailored to suit a variety of
-                lifestyles and preferences. Whether you&apos;re dreaming of a
-                peaceful retreat in the heart of the countryside or a vibrant
-                community where you can make lifelong memories, we have the
-                perfect holiday home for you. Our holiday homes are designed
-                with comfort and convenience in mind, offering modern interiors,
-                spacious living areas, and all the amenities you need to unwind
-                and enjoy your time away from the hustle and bustle of everyday
-                life. From cozy caravans to luxurious lodges, each home provides
-                the perfect base for exploring the natural beauty and
-                attractions surrounding Grassholme Holiday Park.
+                We work with the UK&apos;s leading holiday home manufacturers to
+                provide a have a great range of caravans and lodges for sale
+                starting from £39,995. Whatever your taste, requirements or
+                budget, we&apos;re sure to have the perfect option for you and
+                your family. We have included a selection of holiday homes
+                currently available or coming soon below. If you&apos;d like
+                details on the full range available, don&apos;t hesitate to
+                contact a member of our team.
               </p>
-              <p>
-                Owning a holiday home at Grassholme Holiday Park means you can
-                escape whenever you like and enjoy the stunning scenery of
-                Teesdale at your leisure. Whether you&apos;re planning weekend
-                getaways, extended holidays, or a long-term stay, our holiday
-                homes offer the flexibility and freedom to make the most of
-                every moment.
-              </p>
+              <div className="flex justify-end">
+                <Link
+                  className="btn-secondary text-center fancy"
+                  href={"/our-park"}
+                >
+                  Request More Info
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8 px-8 py-12">
-        {caravans.map((caravan) => (
-          <CaravanListItem key={caravan.id} caravan={caravan} />
-        ))}
-      </section>
+      <div className="flex justify-center">
+        <section className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8 px-4 py-12">
+          {caravans.map((caravan) => (
+            <CaravanListItem key={caravan.id} caravan={caravan} />
+          ))}
+        </section>
+      </div>
       <ContactSection />
     </div>
   )

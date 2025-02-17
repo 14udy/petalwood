@@ -41,10 +41,7 @@ export default function DeleteCaravan({ caravan, setCaravans }) {
               >
                 Cancel
               </button>
-              <button
-                className="btn-secondary bg-red-500"
-                onClick={handleDelete}
-              >
+              <button className="btn-trash bg-red-500" onClick={handleDelete}>
                 Delete
               </button>
             </div>

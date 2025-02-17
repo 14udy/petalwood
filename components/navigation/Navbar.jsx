@@ -24,7 +24,7 @@ export default function Navbar() {
             className="w-auto h-[70px]"
           />
         </Link>
-        <ul className={`hidden lg:flex  lg:items-center  text-center `}>
+        <ul className={`hidden lg:flex  lg:items-center  text-center gap-3`}>
           <li>
             <Link
               href="/our-park"
@@ -109,9 +109,9 @@ export default function Navbar() {
             <FaTiktok className="text-2xl " />
           </a>
         </div> */}
-        <Link href="/contact">
+        {/* <Link href="/contact">
           <span className="block py-2 px-4 nav-link me-5">Contact Us</span>
-        </Link>
+        </Link> */}
       </div>
 
       <div className="lg:hidden">

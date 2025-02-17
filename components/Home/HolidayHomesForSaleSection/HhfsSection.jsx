@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react"
 import CaravanListItem from "../../CaravanList/CaravanListItem"
 import { supabase } from "@/Utils/Supabase/supabase"
+import Link from "next/link"
 
 export default function HhfsSection() {
   const [caravans, setCaravans] = useState([])
@@ -36,7 +37,7 @@ export default function HhfsSection() {
   return (
     <section className="bg-primary text-white py-12 space-y-12">
       <div>
-        <h3 className=" text-3xl md:text-5xl text-center fancy">
+        <h3 className=" text-5xl md:text-6xl fancy text-center">
           Holiday Homes for Sale
         </h3>
       </div>
@@ -45,6 +46,14 @@ export default function HhfsSection() {
         {caravans.map((caravan) => (
           <CaravanListItem key={caravan.id} caravan={caravan} session={null} />
         ))}
+      </div>
+      <div className="flex justify-end">
+        <Link
+          className="btn-secondary text-center fancy"
+          href={"/holiday-homes-for-sale"}
+        >
+          View All
+        </Link>
       </div>
     </section>
   )

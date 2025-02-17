@@ -16,6 +16,30 @@ const geistMono = localFont({
   weight: "100 900",
 })
 
+const minionPro = localFont({
+  src: [
+    { path: "./fonts/MinionPro-Bold.woff", weight: "700", style: "normal" },
+
+    { path: "./fonts/MinionPro-BoldIt.woff", weight: "700", style: "italic" },
+    { path: "./fonts/MinionPro-Medium.woff", weight: "500", style: "normal" },
+    {
+      path: "./fonts/MinionPro-MediumIt.woff",
+      weight: "500",
+      style: "italic",
+    },
+    { path: "./fonts/MinionPro-Semibold.woff", weight: "600", style: "normal" },
+    {
+      path: "./fonts/MinionPro-SemiboldIt.woff",
+      weight: "600",
+      style: "italic",
+    },
+
+    { path: "./fonts/MinionPro-Regular.woff", weight: "400", style: "normal" },
+    { path: "./fonts/MinionPro-It.woff", weight: "400", style: "italic" },
+  ],
+  variable: "--font-minion-pro",
+})
+
 export const metadata = {
   title: "Petalwood",
   description: "Grassholme Holiday Park",
@@ -25,7 +49,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${minionPro.variable} antialiased`}
       >
         <ToastProvider>
           <Navbar />
