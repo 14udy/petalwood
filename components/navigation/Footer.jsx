@@ -42,10 +42,7 @@ export default function Footer() {
             </div>
             <div>
               {" "}
-              <p>Petalwood</p>
-              <p>2/4 Coastal Road</p>
-              <p>Lancaster</p>
-              <p>LA2 6HN</p>
+              <p>Petalwood Limited</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -57,7 +54,7 @@ export default function Footer() {
                 className="hover:underline underline-offset-4"
                 href="tel:+441461600540"
               >
-                01461 600 540
+                01833 625879
               </a>
             </p>
           </div>
@@ -70,8 +67,14 @@ export default function Footer() {
                 className="hover:underline underline-offset-4"
                 href="mailto:info@petalwood.co.uk"
               >
-                info@petalwood.co.uk
+                hello@petalwood.co.uk
               </a>
+            </p>
+          </div>
+          <div>
+            <p>
+              Copyright © {new Date().getFullYear()} Petalwood. All Rights
+              Reserved
             </p>
           </div>
         </section>
@@ -155,7 +158,7 @@ export default function Footer() {
         <h3 className="text-3xl  fancy">Social Media</h3>
         <div className=" flex  gap-2 items-center">
           <a
-            href="https://www.facebook.com/people/The-Holiday-Park-People/61563980614141"
+            href="https://www.facebook.com/profile.php?id=61568268581402"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to Facebook page"
@@ -163,7 +166,7 @@ export default function Footer() {
             <FaFacebook className="text-4xl" />
           </a>
           <a
-            href="https://www.instagram.com/theholidayparkpeople"
+            href="https://www.instagram.com/petalwood_limited/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to Instagram page"
@@ -171,28 +174,12 @@ export default function Footer() {
             <FaInstagram className="text-4xl " />
           </a>
           <a
-            href="https://www.linkedin.com/company/the-holiday-park-people/"
+            href="https://www.linkedin.com/company/petalwood/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to LinkedIn page"
           >
             <FaLinkedin className="text-4xl " />
-          </a>
-          <a
-            href="https://www.youtube.com/@theholidayparkpeople"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to Youtube page"
-          >
-            <FaSquareYoutube className="text-4xl " />
-          </a>
-          <a
-            href="https://www.tiktok.com/@holidayparkpeople"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to TikTok page"
-          >
-            <FaTiktok className="text-4xl " />
           </a>
         </div>
         <div>

@@ -5,6 +5,13 @@ import Link from "next/link"
 import { useState } from "react"
 import MobileNavbar from "./MobileNavbar"
 import ServiceLinks from "./ServiceLinks"
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaPhone,
+} from "react-icons/fa6"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -66,10 +73,22 @@ export default function Navbar() {
         <MobileNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
 
-      <div className="hidden lg:flex gap-3">
-        {/* <div className=" flex  gap-2 items-center">
+      <div className="hidden lg:flex gap-3 me-5">
+        <div className=" flex  gap-2 items-center">
           <a
-            href="https://www.facebook.com/people/The-Holiday-Park-People/61563980614141"
+            className="hover:underline underline-offset-4"
+            href="tel:+441461600540"
+          >
+            <FaPhone className="text-2xl" />
+          </a>
+          <a
+            className="hover:underline underline-offset-4"
+            href="mailto:info@petalwood.co.uk"
+          >
+            <FaEnvelope className="text-2xl" />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61568268581402"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to Facebook page"
@@ -77,7 +96,7 @@ export default function Navbar() {
             <FaFacebook className="text-2xl" />
           </a>
           <a
-            href="https://www.instagram.com/theholidayparkpeople"
+            href="https://www.instagram.com/petalwood_limited/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to Instagram page"
@@ -85,30 +104,14 @@ export default function Navbar() {
             <FaInstagram className="text-2xl " />
           </a>
           <a
-            href="https://www.linkedin.com/company/the-holiday-park-people/"
+            href="https://www.linkedin.com/company/petalwood/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to LinkedIn page"
           >
             <FaLinkedin className="text-2xl " />
           </a>
-          <a
-            href="https://www.youtube.com/@theholidayparkpeople"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to Youtube page"
-          >
-            <FaSquareYoutube className="text-2xl " />
-          </a>
-          <a
-            href="https://www.tiktok.com/@holidayparkpeople"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to TikTok page"
-          >
-            <FaTiktok className="text-2xl " />
-          </a>
-        </div> */}
+        </div>
         {/* <Link href="/contact">
           <span className="block py-2 px-4 nav-link me-5">Contact Us</span>
         </Link> */}
