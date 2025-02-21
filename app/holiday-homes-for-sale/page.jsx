@@ -38,8 +38,8 @@ export default function HolidayHomesForSale() {
   return (
     <div>
       <Hero
-        heading={"Holiday homes for sale"}
-        tagline={"at Grassholme holiday park"}
+        heading={"A selection of holiday homes for sale "}
+        tagline={""}
         imgUrl={"https://media-public.canva.com/QvlVw/MAFluWQvlVw/1/s2.jpg"}
       />
       <section>
@@ -64,7 +64,7 @@ export default function HolidayHomesForSale() {
                   className="btn-secondary text-center fancy"
                   href={"/our-park"}
                 >
-                  Request More Info
+                  Request more info
                 </Link>
               </div>
             </div>

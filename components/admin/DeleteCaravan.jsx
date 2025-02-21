@@ -18,11 +18,12 @@ export default function DeleteCaravan({ caravan, setCaravans }) {
   return (
     <div>
       <button
-        className="p-2 text-gray-600 hover:text-red-600 transition-colors"
+        className="p-2  hover:text-red-600 transition-colors"
         onClick={() => setShowDeleteModal(true)}
       >
         <FaTrash />
       </button>
+      s
       {showDeleteModal && (
         <Modal
           title="Delete Caravan"

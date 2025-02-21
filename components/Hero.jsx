@@ -21,7 +21,7 @@ export default function Hero({
         alt={`Image of ${heading}`}
         loading="eager"
       />
-      <div className="absolute inset-0 bg-black opacity-50 z-[-1]"></div>
+      <div className="absolute inset-0 bg-black opacity-30 z-[-1]"></div>
       {location && (
         <div className="absolute bottom-5 right-0">
           <div className="bg-primary text-white p-2 flex items-center gap-2 rounded-tl-lg rounded-bl-lg">

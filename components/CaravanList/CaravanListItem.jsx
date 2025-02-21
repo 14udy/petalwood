@@ -19,27 +19,27 @@ export default function CaravanListItem({
       className="relative bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl "
     >
       {caravan.status === "COMING_SOON" ? (
-        <div className="absolute top-1 right-1 bg-[#026db8] text-white px-2 py-1 rounded-full z-10 fancy uppercase ">
+        <div className="absolute top-1 right-1 bg-[#2491b5] text-white px-2 py-1 rounded-full z-10 fancy uppercase ">
           Coming Soon
         </div>
       ) : (
         <div
           className={`absolute top-1 right-1 ${
-            caravan.state === "NEW" ? "bg-[#026db8]" : "bg-[#026db8]"
+            caravan.state === "NEW" ? "bg-[#2491b5]" : "bg-[#2491b5]"
           } text-white px-2 py-1 rounded-full z-10 fancy uppercase `}
         >
           {caravan.state}
         </div>
       )}
 
-      <div className="relative h-48">
+      <div className="relative h-[200px]">
         <ImageCarousel images={caravan.images} />
       </div>
 
       <div className="p-4  space-y-4">
         <div>
           <div>
-            <h2 className="text-gray-600 text-2xl fancy font-semibold tracking-tight">
+            <h2 className="text-gray-600 text-xl fancy font-semibold tracking-tight">
               {caravan.name}
             </h2>
             <p className="text-gray-600 text-sm line-clamp-4 mt-1 h-20">
@@ -91,7 +91,7 @@ export default function CaravanListItem({
                 href={`/holiday-homes-for-sale/${caravan.id}`}
                 className="btn-secondary"
               >
-                View Caravan
+                View caravan
               </Link>
             </div>
           )}

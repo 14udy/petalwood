@@ -9,7 +9,7 @@ import "swiper/css/navigation"
 export default function ImageCarousel({ images }) {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
   return (
-    <div className="relative w-full h-[200px] [&_.swiper-button-next]:text-white [&_.swiper-button-next]:scale-50 [&_.swiper-button-prev]:text-white [&_.swiper-button-prev]:scale-50 [&_.swiper-pagination-bullet]:bg-white">
+    <div className="relative w-full h-full [&_.swiper-button-next]:text-white [&_.swiper-button-next]:scale-55 [&_.swiper-button-prev]:text-white [&_.swiper-button-prev]:scale-55 [&_.swiper-pagination-bullet]:bg-white">
       <Swiper
         modules={[Pagination, Navigation]}
         pagination={{ clickable: true }}

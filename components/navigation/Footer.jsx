@@ -6,33 +6,28 @@ import {
   FaInstagram,
   FaLinkedin,
   FaLocationDot,
-  FaLocationPin,
   FaPhone,
-  FaSquareYoutube,
-  FaTiktok,
 } from "react-icons/fa6"
 import Link from "next/link"
 
 export default function Footer() {
   return (
     <footer className="w-full   bg-primary text-white grid md:grid-cols-2 lg:grid-cols-4 p-2 gap-3 border-t border-slate-600 py-6 ">
-      {/* <div className="flex flex-col justify-between gap-2">
+      <div className="flex flex-col justify-between gap-2  p-4 rounded ">
         <div>
           <Image
             src={logo}
-            alt="Holiday Park People Logo"
+            alt="Petalwood Logo"
             height={627}
             width={455}
             className="h-[100px] w-auto"
           />
         </div>
-        <p className="text-sm">
-          Expert support for the UK holiday park sector <br />
-        </p>
+
         <p className="text-sm">
           Copyright © {new Date().getFullYear()} Petalwood. All Rights Reserved
         </p>
-      </div> */}
+      </div>
       <div className="flex flex-col justify-between gap-2 border border-white p-4 rounded">
         <h3 className="text-3xl  fancy ">Contact Details</h3>
         <section className="space-y-1">
@@ -52,7 +47,7 @@ export default function Footer() {
             <p>
               <a
                 className="hover:underline underline-offset-4"
-                href="tel:+441461600540"
+                href="tel:+441833 625879"
               >
                 01833 625879
               </a>
@@ -65,16 +60,10 @@ export default function Footer() {
             <p>
               <a
                 className="hover:underline underline-offset-4"
-                href="mailto:info@petalwood.co.uk"
+                href="mailto:hello@petalwood.co.uk"
               >
                 hello@petalwood.co.uk
               </a>
-            </p>
-          </div>
-          <div>
-            <p>
-              Copyright © {new Date().getFullYear()} Petalwood. All Rights
-              Reserved
             </p>
           </div>
         </section>
@@ -141,18 +130,6 @@ export default function Footer() {
           </li>
         </ul>
       </div> */}
-
-      <div className="flex flex-col justify-between gap-2 border border-white p-4 rounded">
-        <h3 className="text-3xl  fancy">Office Hours</h3>
-        <div>
-          <p>Monday to Friday</p>
-          <p>9:00 am to 6:00 pm</p>
-        </div>
-        <div>
-          <p>Saturday</p>
-          <p>9:00 am to 12:00 noon</p>
-        </div>
-      </div>
 
       <div className="flex flex-col justify-between gap-2 border border-white p-4 rounded">
         <h3 className="text-3xl  fancy">Social Media</h3>

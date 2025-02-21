@@ -22,7 +22,7 @@ export default function ReviewCard({ author, rating, content }) {
             </svg>
           ))}
       </div>
-      <p className="text-sm text-gray-600">{content}</p>
+      <p className="text-sm ">{content}</p>
     </div>
   )
 }

@@ -66,7 +66,7 @@ hr {
   @apply bg-[var(--primary)] hover:bg-sky-700 text-white font-bold py-2 px-4 rounded shadow-md;
 }
 .btn-secondary {
-  @apply bg-[var(--secondary)] hover:bg-[var(--secondary-hover)] text-white uppercase  py-2 px-4 rounded-full shadow-md;
+  @apply bg-[var(--secondary)] hover:bg-[var(--secondary-hover)] text-white  py-2 px-4 rounded-full shadow-md font-semibold text-lg;
 }
 
 /* Grey #181e34 */

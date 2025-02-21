@@ -7,15 +7,17 @@ import HhfsSection from "@/components/Home/HolidayHomesForSaleSection/HhfsSectio
 import Link from "next/link"
 import React from "react"
 
+import headerImage from "@/public/assets/images/holiday-home-ownership-header.webp"
+import image1 from "@/public/assets/images/holiday-home-ownership-img1.webp"
+import image2 from "@/public/assets/images/holiday-home-ownership-img2.webp"
+
 export default function HolidayHomeOwnership() {
   return (
     <div>
       <Hero
-        heading={"A peaceful bolthole"}
+        heading={"A peaceful escape"}
         tagline={"to enjoy endless holidays"}
-        imgUrl={
-          "https://media-private.canva.com/F8ILg/MAEioFF8ILg/1/s3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250212T090846Z&X-Amz-Expires=39747&X-Amz-Signature=a2ac747cb0fa831f6a1188296be7eba5bcb456f143e54c9875a827a0f23cf162&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2012%20Feb%202025%2020%3A11%3A13%20GMT"
-        }
+        imgUrl={headerImage}
         position="object-center"
       />
 
@@ -26,10 +28,11 @@ export default function HolidayHomeOwnership() {
         >
           <div className="space-y-6 text-lg text-center md:text-start">
             <p>
-              Petalwood is committed to creating special places for holiday home
-              owners to truly relax and embrace holiday home ownership with
-              like-minded people. Your holiday home should be a special place
-              where you can unwind and make memories with your loved ones.
+              At Grassholme holiday park, we are committed to creating special
+              places for holiday home owners to truly relax and embrace holiday
+              home ownership with like-minded people. Your holiday home should
+              be a special place where you can unwind and make memories with
+              your loved ones. 
             </p>
             <p>
               We understand that finding the perfect park can feel daunting. Our
@@ -49,7 +52,7 @@ export default function HolidayHomeOwnership() {
             </div>
           </div>
         </ImageWithTextContent>
-        <ImageWithTextImageCon url="https://media-private.canva.com/MABz2f9zEB0/1/screen_2x.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250212T121832Z&X-Amz-Expires=28062&X-Amz-Signature=6b4ed234c0f9fa662250fa4e7aabdb496dd60f5bcc7d07e8946e42d8fb9d5d42&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2012%20Feb%202025%2020%3A06%3A14%20GMT" />
+        <ImageWithTextImageCon url={image1} />
       </ImageWithTextSection>
 
       <HhfsSection />
@@ -88,7 +91,7 @@ export default function HolidayHomeOwnership() {
                 </button> */}
           </div>
         </ImageWithTextContent>
-        <ImageWithTextImageCon url="https://media-private.canva.com/MADmIiihIlc/1/screen_2x.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250211%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250211T180555Z&X-Amz-Expires=93740&X-Amz-Signature=31b9dcf5adbaab6aecad20c60ce4f868d88c04537ec5b508d22eb85679fa5f87&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2012%20Feb%202025%2020%3A08%3A15%20GMT" />
+        <ImageWithTextImageCon url={image2} />
       </ImageWithTextSection>
 
       <ContactSection />

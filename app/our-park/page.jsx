@@ -7,6 +7,8 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 
+import image1 from "@/public/assets/images/our-park-img1.webp"
+
 export default function OurPark() {
   return (
     <div>
@@ -38,7 +40,7 @@ export default function OurPark() {
         <div className="w-full flex justify-center">
           <div className="max-w-xl flex flex-col items-center">
             <Image
-              src="https://media-private.canva.com/hwkVU/MAED99hwkVU/1/s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250212T105538Z&X-Amz-Expires=34049&X-Amz-Signature=828d7c0b7bca36ec36a200aca060e4d9111292b17ddeec92018a023484a92753&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2012%20Feb%202025%2020%3A23%3A07%20GMT"
+              src={image1}
               alt="Grassholme Holiday Park"
               width={1920}
               height={1080}
@@ -89,21 +91,14 @@ export default function OurPark() {
         >
           <div className="space-y-6 text-lg text-start">
             <p>
-              Grassholme and Barnard Castle are just two of the many areas to
-              explore when you own a holiday home at Grassholme. Grassholme is
-              known for its serene reservoir, surrounded by rolling hills and
-              walking trails, making it a haven for outdoor enthusiasts and
-              anglers. Nearby, Barnard Castle, a historic market town, takes its
-              name from its iconic medieval fortress perched above the River
-              Tees.
+              Middleton-in-Teesdale and Barnard Castle are just two of the many
+              areas to explore when you own a holiday home at Grassholme.
+              Middelton-in-Teesdale is a haven for outdoor enthusiasts and
+              anglers, surrounded by rolling hills and walking trails. Nearby,
+              Barnard Castle, a historic market town, takes its name from its
+              iconic medieval fortress perched above the River Tees.
             </p>
-            <p>
-              The town boasts cobbled streets, independent shops, and
-              attractions such as The Bowes Museum, renowned for its art and
-              history collections. The area offers a blend of natural beauty and
-              rich heritage, making Grassholme Holiday Park the perfect holiday
-              home escape.
-            </p>
+
             <div className="w-full flex ">
               <Link
                 className="btn-secondary w-full text-center"

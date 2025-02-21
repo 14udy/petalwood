@@ -35,7 +35,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
       <li>
         <Link href="/our-park" onClick={() => setIsOpen(false)}>
           <span className="block py-2 px-4 hover:underline underline-offset-4">
-            Our Park
+            Our park
           </span>
         </Link>
       </li>
@@ -73,13 +73,13 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
         <div className=" flex  gap-2 justify-center items-center">
           <a
             className="hover:underline underline-offset-4"
-            href="tel:+441461600540"
+            href="tel:+441833625879"
           >
-            <FaPhone className="text-2xl"  />
+            <FaPhone className="text-2xl" />
           </a>
           <a
             className="hover:underline underline-offset-4"
-            href="mailto:info@petalwood.co.uk"
+            href="mailto:hello@petalwood.co.uk"
           >
             <FaEnvelope className="text-2xl" />
           </a>

@@ -7,6 +7,7 @@ import HhfsSection from "@/components/Home/HolidayHomesForSaleSection/HhfsSectio
 import Image from "next/image"
 import Link from "next/link"
 
+import headerImage from "@/public/assets/images/page1-header.webp"
 import image1 from "@/public/assets/images/page1-img1.webp"
 import image2 from "@/public/assets/images/page1-img2.webp"
 import image3 from "@/public/assets/images/page1-img3.webp"
@@ -18,18 +19,18 @@ export default function Home() {
       <Hero
         heading={"A holiday home retreat "}
         tagline={"in the heart of Teesdale"}
-        imgUrl={"https://media-public.canva.com/MADGyNcnzZY/4/screen_2x.jpg"}
+        imgUrl={headerImage}
       />
       <ImageWithTextSection>
         <ImageWithTextContent
           alignText="text-start"
           title="Welcome to your home away from home"
         >
-          <div className="space-y-6 text-lg text-center md:text-start">
+          <div className=" space-y-6 text-lg text-center md:text-start">
             <p>
-              Petalwood is a privately owned holiday park operator committed to
-              providing quality holiday parks and a holiday ownership experience
-              that is really special in terms of locations and service.
+              Grassholme is a privately owned holiday park, committed to
+              providing a holiday ownership experience that is really special in
+              terms of locations and service.
             </p>
             <p>
               When you own a holiday home at Grassholme Holiday Park, you and
@@ -46,7 +47,7 @@ export default function Home() {
               className="btn-secondary w-full text-center fancy"
               href={"/our-park"}
             >
-              View our park
+              View Grassholme Leisure Park
             </Link>
           </div>
         </ImageWithTextContent>
@@ -78,7 +79,7 @@ export default function Home() {
               className="btn-secondary w-full text-center fancy "
               href={"/holiday-home-ownership"}
             >
-              Discover More
+              Discover more
             </Link>
           </div>
         </ImageWithTextContent>

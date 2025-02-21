@@ -38,7 +38,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="nav-link"
             >
-              Our Park
+              Our park
             </Link>
           </li>
           <li>
@@ -77,13 +77,13 @@ export default function Navbar() {
         <div className=" flex  gap-2 items-center">
           <a
             className="hover:underline underline-offset-4"
-            href="tel:+441461600540"
+            href="tel:+441833625879"
           >
             <FaPhone className="text-2xl" />
           </a>
           <a
             className="hover:underline underline-offset-4"
-            href="mailto:info@petalwood.co.uk"
+            href="mailto:hello@petalwood.co.uk"
           >
             <FaEnvelope className="text-2xl" />
           </a>

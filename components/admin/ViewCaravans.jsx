@@ -44,7 +44,7 @@ export default function ViewCaravans({ session }) {
         </h1>
         <div>
           <Link href="/admin/create-caravan" className="btn-secondary">
-            Create Caravan
+            Create caravan
           </Link>
         </div>
       </div>

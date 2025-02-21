@@ -32,7 +32,7 @@ export default function TrueFalseRadio({
         <label className="inline-flex items-center w-6/12">
           <input
             type="radio"
-            className="form-radio h-5 w-5 text-gray-600"
+            className="form-radio h-5 w-5 "
             name={option}
             checked={form[option] === false}
             onChange={(e) => handleChange(option, false)}

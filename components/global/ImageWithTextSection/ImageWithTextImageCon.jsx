@@ -3,7 +3,7 @@ import React from "react"
 
 export default function ImageWithTextImageCon({ url }) {
   return (
-    <div className="w-full flex justify-center">
+    <div className="order-1 md:order-2 w-full flex justify-center">
       <div className="max-w-xl flex flex-col items-center">
         <Image
           src={url}
