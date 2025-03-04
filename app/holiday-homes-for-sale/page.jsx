@@ -7,6 +7,8 @@ import { supabase } from "@/Utils/Supabase/supabase"
 import CaravanListItem from "@/components/CaravanList/CaravanListItem"
 import Link from "next/link"
 
+import heroImage from "@/public/assets/images/HolidayHomesForSale/hero.webp"
+
 export default function HolidayHomesForSale() {
   const [caravans, setCaravans] = useState([])
 
@@ -40,7 +42,7 @@ export default function HolidayHomesForSale() {
       <Hero
         heading={"A selection of holiday homes for sale "}
         tagline={""}
-        imgUrl={"https://media-public.canva.com/QvlVw/MAFluWQvlVw/1/s2.jpg"}
+        imgUrl={heroImage}
       />
       <section>
         <div className="w-full flex justify-center py-12">
@@ -60,12 +62,12 @@ export default function HolidayHomesForSale() {
                 contact a member of our team.
               </p>
               <div className="flex justify-end">
-                <Link
+                <a
                   className="btn-secondary text-center fancy"
-                  href={"/our-park"}
+                  href={"#contact"}
                 >
                   Request more info
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -19,41 +19,45 @@ export default function ContactForm() {
   const [loading, setLoading] = useState(false)
   const contact = async (e) => {
     e.preventDefault()
-    setLoading(true)
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        body: JSON.stringify(form),
-      })
+    setSubmitted(true)
+    // setLoading(true)
 
-      if (!response.ok) {
-        const errorMessage = await response.json() // Extract error message from response body
-        throw new Error(errorMessage.message || "An error occurred")
-      }
+    // try {
+    //   const response = await fetch("/api/contact", {
+    //     method: "POST",
+    //     body: JSON.stringify(form),
+    //   })
 
-      setForm({
-        firstname: "",
-        lastname: "",
-        email: "",
-        message: "",
-      })
-      setSubmitted(true)
-    } catch (error) {
-      showToast(error.message, "error")
-    } finally {
-      setLoading(false)
-    }
+    //   if (!response.ok) {
+    //     const errorMessage = await response.json() // Extract error message from response body
+    //     throw new Error(errorMessage.message || "An error occurred")
+    //   }
+
+    //   setForm({
+    //     firstname: "",
+    //     lastname: "",
+    //     email: "",
+    //     message: "",
+    //   })
+    //   setSubmitted(true)
+    // } catch (error) {
+    //   showToast(error.message, "error")
+    // } finally {
+    //   setLoading(false)
+    // }
   }
 
   if (submitted) {
     return (
       <div className="relative text-white h-[450px] p-4">
         <div className="flex flex-col justify-center items-center gap-2 h-full w-full rounded-lg ">
-          <h1 className=" text-xl md:text-2xl font-bold">
+          <h1 className=" text-xl md:text-2xl font-bold fancy">
             Thanks for your enquiry!
           </h1>
-          <h1 className="md:text-xl font-bold">We&apos;ll be in touch soon.</h1>
+          <h1 className="md:text-xl font-bold fancy">
+            We&apos;ll be in touch soon.
+          </h1>
         </div>
         <ConfettiComponent triggerConfetti={submitted} />
       </div>

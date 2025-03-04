@@ -1,5 +1,5 @@
 "use client"
-import logo from "@/public/logo.webp"
+import logo from "@/public/logo.png"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"

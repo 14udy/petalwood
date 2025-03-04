@@ -7,11 +7,11 @@ import HhfsSection from "@/components/Home/HolidayHomesForSaleSection/HhfsSectio
 import Image from "next/image"
 import Link from "next/link"
 
-import headerImage from "@/public/assets/images/page1-header.webp"
-import image1 from "@/public/assets/images/page1-img1.webp"
-import image2 from "@/public/assets/images/page1-img2.webp"
-import image3 from "@/public/assets/images/page1-img3.webp"
-import image4 from "@/public/assets/images/page1-img4.webp"
+import heroImage from "@/public/assets/images/Home/hero.webp"
+import coupleWalking from "@/public/assets/images/Home/couple-walking.webp"
+import extendedFamily from "@/public/assets/images/Home/extended-family.webp"
+import sailingClub from "@/public/assets/images/Home/sailing-club.webp"
+import stars from "@/public/assets/images/Home/stars.webp"
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <Hero
         heading={"A holiday home retreat "}
         tagline={"in the heart of Teesdale"}
-        imgUrl={headerImage}
+        imgUrl={heroImage}
       />
       <ImageWithTextSection>
         <ImageWithTextContent
@@ -47,11 +47,11 @@ export default function Home() {
               className="btn-secondary w-full text-center fancy"
               href={"/our-park"}
             >
-              View Grassholme Leisure Park
+              View Grassholme Holiday Park
             </Link>
           </div>
         </ImageWithTextContent>
-        <ImageWithTextImageCon url={image1} />
+        <ImageWithTextImageCon url={coupleWalking} />
       </ImageWithTextSection>
 
       <HhfsSection />
@@ -83,7 +83,7 @@ export default function Home() {
             </Link>
           </div>
         </ImageWithTextContent>
-        <ImageWithTextImageCon url={image2} />
+        <ImageWithTextImageCon url={extendedFamily} />
       </ImageWithTextSection>
 
       <div className="flex justify-center">
@@ -94,7 +94,7 @@ export default function Home() {
           <div className="flex flex-col xl:flex-row gap-6">
             <div className="w-full xl:w-4/12">
               <Image
-                src={image3}
+                src={sailingClub}
                 alt="Grassholme Holiday Park"
                 width={1920}
                 height={1080}
@@ -103,7 +103,7 @@ export default function Home() {
             </div>
             <div className="w-full xl:w-8/12">
               <Image
-                src={image4}
+                src={stars}
                 alt="Grassholme Holiday Park"
                 width={1920}
                 height={1080}

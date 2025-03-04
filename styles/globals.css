@@ -39,6 +39,11 @@ body {
   background: white;
   scroll-behavior: smooth;
 }
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 
 @layer utilities {
   .text-balance {

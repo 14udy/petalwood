@@ -7,9 +7,9 @@ import HhfsSection from "@/components/Home/HolidayHomesForSaleSection/HhfsSectio
 import Link from "next/link"
 import React from "react"
 
-import headerImage from "@/public/assets/images/holiday-home-ownership-header.webp"
-import image1 from "@/public/assets/images/holiday-home-ownership-img1.webp"
-import image2 from "@/public/assets/images/holiday-home-ownership-img2.webp"
+import heroImage from "@/public/assets/images/HolidayHomeOwnership/hero.webp"
+import river from "@/public/assets/images/HolidayHomeOwnership/river.webp"
+import dam from "@/public/assets/images/HolidayHomeOwnership/dam.webp"
 
 export default function HolidayHomeOwnership() {
   return (
@@ -17,8 +17,8 @@ export default function HolidayHomeOwnership() {
       <Hero
         heading={"A peaceful escape"}
         tagline={"to enjoy endless holidays"}
-        imgUrl={headerImage}
-        position="object-center"
+        imgUrl={heroImage}
+        position="object-top"
       />
 
       <ImageWithTextSection>
@@ -52,7 +52,7 @@ export default function HolidayHomeOwnership() {
             </div>
           </div>
         </ImageWithTextContent>
-        <ImageWithTextImageCon url={image1} />
+        <ImageWithTextImageCon url={river} />
       </ImageWithTextSection>
 
       <HhfsSection />
@@ -80,18 +80,12 @@ export default function HolidayHomeOwnership() {
             </p>
           </div>
           <div className="w-full flex ">
-            <Link
-              className="btn-secondary w-full text-center"
-              href={"/explore-the-area"}
-            >
+            <a className="btn-secondary w-full text-center" href={"#contact"}>
               Arrange a park visit
-            </Link>
-            {/* <button className="btn-secondary w-full font-mono">
-                  Explore The Area
-                </button> */}
+            </a>
           </div>
         </ImageWithTextContent>
-        <ImageWithTextImageCon url={image2} />
+        <ImageWithTextImageCon url={dam} />
       </ImageWithTextSection>
 
       <ContactSection />

@@ -41,7 +41,7 @@ const minionPro = localFont({
 })
 
 export const metadata = {
-  title: "Petalwood",
+  title: "Grassholme Holiday Park",
   description: "Grassholme Holiday Park",
 }
 
@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${minionPro.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${minionPro.variable} antialiased scroll-smooth`}
       >
         <ToastProvider>
           <Navbar />

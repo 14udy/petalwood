@@ -7,7 +7,8 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 
-import image1 from "@/public/assets/images/our-park-img1.webp"
+import heroImage from "@/public/assets/images/OurPark/hero.webp"
+import castle from "@/public/assets/images/ExploreTheArea/castle.webp"
 
 export default function OurPark() {
   return (
@@ -15,10 +16,9 @@ export default function OurPark() {
       <Hero
         heading={"A riverside retreat"}
         tagline={"near Grassholme"}
-        imgUrl={
-          "https://media-private.canva.com/FDPSQ/MAEJOXFDPSQ/1/s3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250212T015028Z&X-Amz-Expires=65087&X-Amz-Signature=d17b0eea3d74faafa2f4ddb6cc1b05b4d27586c54bfd7d41bac36d59128fb94a&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2012%20Feb%202025%2019%3A55%3A15%20GMT"
-        }
+        imgUrl={heroImage}
         position="object-top"
+        addLogo={true}
       />
       <ImageWithTextSection>
         <ImageWithTextContent
@@ -40,7 +40,7 @@ export default function OurPark() {
         <div className="w-full flex justify-center">
           <div className="max-w-xl flex flex-col items-center">
             <Image
-              src={image1}
+              src={"/images/"}
               alt="Grassholme Holiday Park"
               width={1920}
               height={1080}
@@ -54,7 +54,7 @@ export default function OurPark() {
         <div className="w-full flex order-2 md:order-1">
           <div className="max-w-xl flex flex-col items-center">
             <Image
-              src="https://media-private.canva.com/hwkVU/MAED99hwkVU/1/s.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250212%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250212T105538Z&X-Amz-Expires=34049&X-Amz-Signature=828d7c0b7bca36ec36a200aca060e4d9111292b17ddeec92018a023484a92753&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2012%20Feb%202025%2020%3A23%3A07%20GMT"
+              src={"/images/"}
               alt="Grassholme Holiday Park"
               width={1920}
               height={1080}
@@ -112,7 +112,7 @@ export default function OurPark() {
         <div className="w-full flex justify-center">
           <div className="max-w-xl flex flex-col items-center">
             <Image
-              src="https://media-private.canva.com/MADaFKw5g6M/1/screen_2x.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250211%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250211T162020Z&X-Amz-Expires=99074&X-Amz-Signature=7ea19348b71f377d1d8e25701cdb5f5c8352ad7670866f92cde841a970e63ed4&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Wed%2C%2012%20Feb%202025%2019%3A51%3A34%20GMT"
+              src={castle}
               alt="Grassholme Holiday Park"
               width={1920}
               height={1080}

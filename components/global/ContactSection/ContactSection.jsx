@@ -3,7 +3,10 @@ import ContactForm from "./ContactForm"
 
 export default function ContactSection() {
   return (
-    <section className="flex flex-col justify-center items-center bg-primary text-white py-12 ">
+    <section
+      id="contact"
+      className="flex flex-col justify-center items-center bg-primary text-white py-12 "
+    >
       <div className="bg-[#026db8] w-11/12 grid grid-cols-1 md:grid-cols-2 gap-8  rounded-xl  p-4">
         <div className="flex flex-col justify-between p-2  gap-2 text-center md:text-start">
           <div className="space-y-4">
