@@ -13,39 +13,39 @@ export default function ContactForm() {
     lastname: "",
     email: "",
     message: "",
+    phone: "",
   })
 
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const contact = async (e) => {
     e.preventDefault()
+    setLoading(true)
 
-    setSubmitted(true)
-    // setLoading(true)
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify(form),
+      })
 
-    // try {
-    //   const response = await fetch("/api/contact", {
-    //     method: "POST",
-    //     body: JSON.stringify(form),
-    //   })
+      if (!response.ok) {
+        const errorMessage = await response.json() // Extract error message from response body
+        throw new Error(errorMessage.message || "An error occurred")
+      }
 
-    //   if (!response.ok) {
-    //     const errorMessage = await response.json() // Extract error message from response body
-    //     throw new Error(errorMessage.message || "An error occurred")
-    //   }
-
-    //   setForm({
-    //     firstname: "",
-    //     lastname: "",
-    //     email: "",
-    //     message: "",
-    //   })
-    //   setSubmitted(true)
-    // } catch (error) {
-    //   showToast(error.message, "error")
-    // } finally {
-    //   setLoading(false)
-    // }
+      setForm({
+        firstname: "",
+        lastname: "",
+        email: "",
+        message: "",
+        phone: "",
+      })
+      setSubmitted(true)
+    } catch (error) {
+      showToast(error.message, "error")
+    } finally {
+      setLoading(false)
+    }
   }
 
   if (submitted) {
@@ -97,6 +97,15 @@ export default function ContactForm() {
           value={form.email}
           handleChange={(e) => setForm({ ...form, email: e.target.value })}
         />
+        <FormInput
+          label={"Phone"}
+          name={"phone"}
+          placeholder="Enter phone number"
+          required
+          type={"tel"}
+          value={form.phone}
+          handleChange={(e) => setForm({ ...form, phone: e.target.value })}
+        />
       </div>
 
       <FormInput
@@ -118,7 +127,10 @@ export default function ContactForm() {
         </div>
         <button
           type="submit"
-          className=" btn-secondary flex justify-center fancy"
+          className=" btn-secondary  flex justify-center fancy"
+          style={{
+            backgroundColor: "#026db8",
+          }}
         >
           {loading ? <FaSpinner className="animate-spin text-xl" /> : "Submit"}
         </button>

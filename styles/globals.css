@@ -86,7 +86,7 @@ hr {
 }
 
 .bg-secondary {
-  @apply bg-[var(--tertiary)];
+  @apply bg-[var(--secondary)];
 }
 
 .btn-edit {

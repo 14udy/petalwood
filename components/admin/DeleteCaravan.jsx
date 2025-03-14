@@ -23,7 +23,7 @@ export default function DeleteCaravan({ caravan, setCaravans }) {
       >
         <FaTrash />
       </button>
-      s
+
       {showDeleteModal && (
         <Modal
           title="Delete Caravan"

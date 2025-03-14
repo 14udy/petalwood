@@ -150,14 +150,6 @@ export default function Footer() {
           >
             <FaInstagram className="text-4xl " />
           </a>
-          <a
-            href="https://www.linkedin.com/company/petalwood/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to LinkedIn page"
-          >
-            <FaLinkedin className="text-4xl " />
-          </a>
         </div>
         <div>
           <p className="bg-[#026db8] text-white p-2 text-center rounded-full">
@@ -193,15 +185,6 @@ export default function Footer() {
               aria-label="Link to privacy policy page"
             >
               Terms & Conditions
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="hover:underline underline-offset-4"
-              href={"/sitemap.xml"}
-              aria-label="Link to privacy policy page"
-            >
-              Site Map
             </Link>
           </li>
         </ul>

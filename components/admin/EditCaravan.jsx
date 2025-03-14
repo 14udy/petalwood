@@ -30,6 +30,8 @@ export default function EditCaravan({
     sleeps: caravan.sleeps,
     state: caravan.state,
     status: caravan.status,
+    youtube_url: caravan.youtube_url,
+    matterport_url: caravan.matterport_url,
   })
 
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
@@ -119,7 +121,7 @@ export default function EditCaravan({
               label="Name"
               type="text"
               name="name"
-              value={formData.name}
+              value={formData.name || ""}
               handleChange={handleChange}
               required
               placeholder="Enter the name"
@@ -130,7 +132,7 @@ export default function EditCaravan({
                 label="Make"
                 type="text"
                 name="make"
-                value={formData.make}
+                value={formData.make || ""}
                 handleChange={handleChange}
                 required
                 placeholder="Enter the make"
@@ -140,7 +142,7 @@ export default function EditCaravan({
                 label="Model"
                 type="text"
                 name="model"
-                value={formData.model}
+                value={formData.model || ""}
                 handleChange={handleChange}
                 required
                 placeholder="Enter the model"
@@ -151,7 +153,7 @@ export default function EditCaravan({
                 label="Size"
                 type="text"
                 name="size"
-                value={formData.size}
+                value={formData.size || ""}
                 handleChange={handleChange}
                 required
                 placeholder="eg 24' x 12'"
@@ -161,7 +163,7 @@ export default function EditCaravan({
                 label="Price"
                 type="number"
                 name="price"
-                value={formData.price}
+                value={formData.price || ""}
                 handleChange={handleChange}
                 required
                 placeholder="eg 50000"
@@ -172,7 +174,7 @@ export default function EditCaravan({
                 label="Beds"
                 type="number"
                 name="beds"
-                value={formData.beds}
+                value={formData.beds || ""}
                 handleChange={handleChange}
                 required
                 placeholder="eg 3"
@@ -182,7 +184,7 @@ export default function EditCaravan({
                 label="Sleeps"
                 type="number"
                 name="sleeps"
-                value={formData.sleeps}
+                value={formData.sleeps || ""}
                 handleChange={handleChange}
                 required
                 placeholder="eg 6"
@@ -224,6 +226,22 @@ export default function EditCaravan({
                 ]}
               />
             </div>
+            <FormInput
+              label="Youtube URL"
+              type="text"
+              name="youtube_url"
+              value={formData.youtube_url || ""}
+              handleChange={handleChange}
+              placeholder="Enter the youtube url"
+            />
+            <FormInput
+              label="Matterport URL"
+              type="text"
+              name="matterport_url"
+              value={formData.matterport_url || ""}
+              handleChange={handleChange}
+              placeholder="Enter the matterport url"
+            />
           </div>
 
           <div className="space-y-2">

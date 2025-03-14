@@ -24,7 +24,7 @@ export default function Hero({
         alt={`Image of ${heading}`}
         loading="eager"
       />
-      <div className="absolute inset-0 bg-black opacity-30 z-[-1]"></div>
+      <div className="absolute inset-0 bg-black opacity-50 z-[-1]"></div>
       {location && (
         <div className="absolute bottom-5 right-0">
           <div className="bg-primary text-white p-2 flex items-center gap-2 rounded-tl-lg rounded-bl-lg">
@@ -34,9 +34,9 @@ export default function Hero({
         </div>
       )}
 
-      <div className=" h-full flex flex-col justify-between">
+      <div className=" h-full flex flex-col justify-center">
         <div className="h-full flex flex-col items-center justify-center xl:items-start xl:justify-start  xl:ps-10 xl:pt-28 text-center xl:text-start   text-white mt-[70px] space-y-2 lg:space-y-6">
-          <h1 className="text-6xl md:text-8xl font-bold appear fancy ">
+          <h1 className="text-4xl md:text-7xl font-bold appear fancy ">
             {heading}
           </h1>
 

@@ -9,6 +9,8 @@ import React from "react"
 
 import heroImage from "@/public/assets/images/OurPark/hero.webp"
 import castle from "@/public/assets/images/ExploreTheArea/castle.webp"
+import tranquil from "@/public/assets/images/OurPark/tranquil.webp"
+import holidayHomes from "@/public/assets/images/OurPark/holiday-homes.webp"
 
 export default function OurPark() {
   return (
@@ -40,7 +42,7 @@ export default function OurPark() {
         <div className="w-full flex justify-center">
           <div className="max-w-xl flex flex-col items-center">
             <Image
-              src={"/images/"}
+              src={tranquil}
               alt="Grassholme Holiday Park"
               width={1920}
               height={1080}
@@ -54,7 +56,7 @@ export default function OurPark() {
         <div className="w-full flex order-2 md:order-1">
           <div className="max-w-xl flex flex-col items-center">
             <Image
-              src={"/images/"}
+              src={holidayHomes}
               alt="Grassholme Holiday Park"
               width={1920}
               height={1080}
@@ -89,7 +91,7 @@ export default function OurPark() {
           alignText="text-start"
           title="Things to do nearby"
         >
-          <div className="space-y-6 text-lg text-start">
+          <div className="space-y-6 text-lg text-center md:text-start">
             <p>
               Middleton-in-Teesdale and Barnard Castle are just two of the many
               areas to explore when you own a holiday home at Grassholme.

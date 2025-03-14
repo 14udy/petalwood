@@ -5,10 +5,12 @@ import ExploreCard from "@/components/pages/ExploreTheArea/ExploreCard"
 import Image from "next/image"
 import React from "react"
 
+import hero from "@/public/assets/images/ExploreTheArea/hero.jpg"
 import sailingClub from "@/public/assets/images/ExploreTheArea/sailing-club.webp"
 import reservoir from "@/public/assets/images/ExploreTheArea/reservoir.webp"
 import waterfall from "@/public/assets/images/ExploreTheArea/waterfall.webp"
 import castle from "@/public/assets/images/ExploreTheArea/castle.webp"
+import hiking from "@/public/assets/images/ExploreTheArea/hiking.jpg"
 
 export default function page() {
   return (
@@ -16,7 +18,8 @@ export default function page() {
       <Hero
         heading={"So much to see and do"}
         tagline={"in County Durham "}
-        imgUrl={"/images/explore-the-area.jpg"}
+        imgUrl={hero}
+        position="object-center"
       />
       <section className="p-2">
         <div className="w-full flex justify-center py-12">
@@ -44,7 +47,7 @@ export default function page() {
           <div className=" max-w-xl flex flex-col items-center max-h-[300px]">
             <Image
               src={reservoir}
-              alt="Grassholme Holiday Park"
+              alt="Grassholme Reservoir"
               width={1920}
               height={1080}
               className="rounded-2xl h-full object-cover object-center"
@@ -65,7 +68,7 @@ export default function page() {
           <div className="flex justify-end ">
             <a
               className="btn-secondary  text-center fancy "
-              href={"https://www.tdswc.org.uk/"}
+              href={"https://www.watersideparksuk.com/park/grassholme/"}
             >
               Visit website
             </a>
@@ -87,7 +90,7 @@ export default function page() {
           <div className="flex justify-end ">
             <a
               className="btn-secondary  text-center fancy "
-              href={"https://www.watersideparksuk.com/park/grassholme/"}
+              href={"https://www.tdswc.org.uk/"}
             >
               Visit website
             </a>
@@ -97,7 +100,7 @@ export default function page() {
           <div className="max-w-xl flex flex-col items-center max-h-[300px]">
             <Image
               src={sailingClub}
-              alt="Grassholme Holiday Park"
+              alt="Teesdale Sailing Club"
               width={1920}
               height={1080}
               className="rounded-2xl h-full object-cover object-center"
@@ -111,7 +114,7 @@ export default function page() {
           <div className="max-w-xl flex flex-col items-center max-h-[300px]">
             <Image
               src={castle}
-              alt="Grassholme Holiday Park"
+              alt="Barnard Castle"
               width={1920}
               height={1080}
               className="rounded-2xl h-full object-cover object-center"
@@ -131,7 +134,9 @@ export default function page() {
           <div className="flex justify-end ">
             <a
               className="btn-secondary  text-center fancy "
-              href={"https://www.watersideparksuk.com/park/grassholme/"}
+              href={
+                "https://www.english-heritage.org.uk/visit/places/barnard-castle/"
+              }
             >
               Visit website
             </a>
@@ -145,13 +150,25 @@ export default function page() {
             Middleton-in-Teesdale is a picturesque market town that nestles by
             the River Tees. It serves as a gateway to the North Pennines and
             offers local shops, eateries, and access to scenic walking routes.
+            Many of our existing holiday home owners love exploring the endless
+            walking routes that are close to the park. Grassholme Reservoir
+            Circular Walk (4 miles) is one our favourites! A circular footpath
+            that traces the shoreline of the Reservoir, provides magnificent
+            views. The route is set within the North Pennines Area of
+            Outstanding Natural Beauty and includes picnic sites along the way.
+            Middleton-in-Teesdale to Grassholme Reservoir (8 miles) is a
+            pleasant walk that offers lovely views through farmland and around
+            Grassholme Reservoir. Harter Fell & Grassholme from
+            Middleton-in-Teesdale (8 miles) includes Harter Fell, Grassholme
+            Reservoir, and part of the Pennine Way, offering diverse landscapes
+            and views.
           </p>
         </div>
         <div className="order-1 md:order-2 w-full flex justify-center p-4">
           <div className="max-w-xl flex flex-col items-center max-h-[300px]">
             <Image
-              src={"/about/"}
-              alt="Town in teesdale"
+              src={hiking}
+              alt="Grassholme Holiday Park"
               width={1920}
               height={1080}
               className="rounded-2xl h-full object-cover object-center"
@@ -182,36 +199,6 @@ export default function page() {
             rock, which cooled and solidified underground.The Pennine Way
             footpath route runs alongside the River at Low Force
           </p>
-        </div>
-      </section>
-
-      <section className="grid xl:grid-cols-2  gap-4  py-4">
-        <div className="order-2 md:order-1 flex flex-col justify-between">
-          <p className=" text-lg font-semibold p-6">
-            Many of our existing holiday home owners love exploring the endless
-            walking routes that are close to the park. Grassholme Reservoir
-            Circular Walk (4 miles) is one our favourites! A circular footpath
-            that traces the shoreline of the Reservoir, provides magnificent
-            views. The route is set within the North Pennines Area of
-            Outstanding Natural Beauty and includes picnic sites along the way.
-            Middleton-in-Teesdale to Grassholme Reservoir (8 miles) is a
-            pleasant walk that offers lovely views through farmland and around
-            Grassholme Reservoir. Harter Fell & Grassholme from
-            Middleton-in-Teesdale (8 miles) includes Harter Fell, Grassholme
-            Reservoir, and part of the Pennine Way, offering diverse landscapes
-            and views.
-          </p>
-        </div>
-        <div className="order-1 md:order-2 w-full flex justify-center p-4">
-          <div className="max-w-xl flex flex-col items-center max-h-[300px]">
-            <Image
-              src={"/images/"}
-              alt="Grassholme Holiday Park"
-              width={1920}
-              height={1080}
-              className="rounded-2xl h-full object-cover object-center"
-            />
-          </div>
         </div>
       </section>
 

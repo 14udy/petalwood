@@ -25,7 +25,7 @@ export default function FormInput({
           className=" mt-1 block w-full px-3 py-2 border border-gray-600  rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-gray-200 text-black "
           type={type}
           name={name}
-          value={value}
+          value={value || ""}
           onChange={(e) => handleChange(e)}
           required={required}
           placeholder={placeholder}
@@ -37,7 +37,7 @@ export default function FormInput({
           className=" mt-1 block w-full px-3 py-2 border border-gray-600  rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 bg-gray-200 text-black disabled:opacity-50"
           type={type}
           name={name}
-          value={value}
+          value={value || ""}
           onChange={(e) => handleChange(e)}
           required={required}
           placeholder={placeholder}

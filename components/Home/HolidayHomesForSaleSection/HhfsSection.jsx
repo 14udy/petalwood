@@ -37,7 +37,7 @@ export default function HhfsSection() {
   return (
     <section className="bg-primary text-white py-12 space-y-12">
       <div>
-        <h3 className=" text-5xl md:text-6xl fancy text-center">
+        <h3 className=" text-3xl md:text-5xl fancy text-center">
           Holiday Homes for Sale
         </h3>
       </div>

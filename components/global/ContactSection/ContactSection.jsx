@@ -7,22 +7,14 @@ export default function ContactSection() {
       id="contact"
       className="flex flex-col justify-center items-center bg-primary text-white py-12 "
     >
-      <div className="bg-[#026db8] w-11/12 grid grid-cols-1 md:grid-cols-2 gap-8  rounded-xl  p-4">
+      <div className="bg-secondary w-11/12 2xl:w-6/12 grid grid-cols-1 md:grid-cols-2 gap-8  rounded-xl  p-4">
         <div className="flex flex-col justify-between p-2  gap-2 text-center md:text-start">
           <div className="space-y-4">
-            <h3 className="text-5xl md:text-6xl fancy ">Contact Us</h3>
+            <h3 className="text-3xl md:text-5xl fancy ">Contact Us</h3>
             <p>
-              Whether you&apos;re dreaming of owning your own holiday home,
-              planning your next getaway, or just have a quick question,
-              we&apos;re here to help.
-            </p>
-            <p>
-              No question is too big or too small—our friendly team is happy to
-              chat and provide all the information you need.
-            </p>
-            <p>
-              Get in touch today and let’s make your perfect holiday experience
-              a reality!
+              Our friendly team is on hand to help with all our questions.
+              Please complete the contact form and a member of the Grassholme
+              team will be in touch.
             </p>
           </div>
           <small className="text-white">

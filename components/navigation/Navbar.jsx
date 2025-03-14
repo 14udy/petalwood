@@ -103,14 +103,6 @@ export default function Navbar() {
           >
             <FaInstagram className="text-2xl " />
           </a>
-          <a
-            href="https://www.linkedin.com/company/petalwood/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to LinkedIn page"
-          >
-            <FaLinkedin className="text-2xl " />
-          </a>
         </div>
         {/* <Link href="/contact">
           <span className="block py-2 px-4 nav-link me-5">Contact Us</span>

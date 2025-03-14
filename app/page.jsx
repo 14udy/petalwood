@@ -28,9 +28,9 @@ export default function Home() {
         >
           <div className=" space-y-6 text-lg text-center md:text-start">
             <p>
-              Grassholme is a privately owned holiday park, committed to
-              providing a holiday ownership experience that is really special in
-              terms of locations and service.
+              Grassholme is a family ran holiday park, committed to providing a
+              holiday ownership experience that is really special in terms of
+              locations and service.
             </p>
             <p>
               When you own a holiday home at Grassholme Holiday Park, you and

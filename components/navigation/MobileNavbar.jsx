@@ -99,14 +99,7 @@ export default function MobileNavbar({ isOpen, setIsOpen }) {
           >
             <FaInstagram className="text-2xl " />
           </a>
-          <a
-            href="https://www.linkedin.com/company/petalwood/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Link to LinkedIn page"
-          >
-            <FaLinkedin className="text-2xl " />
-          </a>
+         
         </div>
       </li>
     </ul>
