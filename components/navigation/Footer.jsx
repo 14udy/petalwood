@@ -131,7 +131,7 @@ export default function Footer() {
         </ul>
       </div> */}
 
-      <div className="flex flex-col justify-between gap-2 border border-white p-4 rounded">
+      <div className="flex flex-col  gap-2 border border-white p-4 rounded">
         <h3 className="text-3xl  fancy">Social Media</h3>
         <div className=" flex  gap-2 items-center">
           <a
@@ -151,11 +151,7 @@ export default function Footer() {
             <FaInstagram className="text-4xl " />
           </a>
         </div>
-        <div>
-          <p className="bg-[#026db8] text-white p-2 text-center rounded-full">
-            Tag us in your posts #petalwood
-          </p>
-        </div>
+        <div></div>
       </div>
       <div className="flex flex-col  gap-2 border border-white p-4 rounded">
         <h3 className="text-3xl  fancy  ">Important Information</h3>
