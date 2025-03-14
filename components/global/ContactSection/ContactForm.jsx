@@ -65,7 +65,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={contact} className=" space-y-3  rounded-lg  p-4">
+    <form onSubmit={contact} className=" space-y-4  rounded-lg  p-4">
       <div className="grid xl:grid-cols-2 gap-3">
         <FormInput
           label={"First Name"}
@@ -119,21 +119,35 @@ export default function ContactForm() {
         textArea
       />
 
-      <div className="flex justify-between">
-        <div className="grid gap-2">
-          <small className="text-white">
-            <span className="text-red-500">*</span> required information
-          </small>
+      <div className="">
+        {" "}
+        <div className="flex justify-between mb-4">
+          <div className="grid gap-2">
+            <small className="text-white">
+              <span className="text-red-500">*</span> required information
+            </small>
+          </div>
+          <button
+            type="submit"
+            className=" btn-secondary  flex justify-center fancy"
+            style={{
+              backgroundColor: "#026db8",
+            }}
+          >
+            {loading ? (
+              <FaSpinner className="animate-spin text-xl" />
+            ) : (
+              "Submit"
+            )}
+          </button>
         </div>
-        <button
-          type="submit"
-          className=" btn-secondary  flex justify-center fancy"
-          style={{
-            backgroundColor: "#026db8",
-          }}
-        >
-          {loading ? <FaSpinner className="animate-spin text-xl" /> : "Submit"}
-        </button>
+        <small className="text-white">
+          Petalwood uses the contact information you provide to us to contact
+          you about our products and services. You may unsubscribe from these
+          communications at any time. For information on how to unsubscribe, as
+          well as our privacy practices and commitment to protecting your
+          privacy, please review our Privacy Policy.
+        </small>
       </div>
     </form>
   )
