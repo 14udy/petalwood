@@ -43,7 +43,42 @@ const minionPro = localFont({
 
 export const metadata = {
   title: "Grassholme Holiday Park",
-  description: "Grassholme Holiday Park",
+  description:
+    "Grassholme is a family ran holiday park, committed to providing a holiday ownership experience that is really special in terms of locations and service.",
+  keywords: [
+    "holiday homes for sale",
+    "caravans for sale",
+    "lodges for sale",
+    "County Durham",
+    "Grassholme Holiday Park",
+    "affordable holiday homes",
+    "pre-loved caravans",
+    "new caravans",
+    "static caravans",
+    "holiday home ownership",
+    "riverside holiday homes",
+    "Teesdale",
+    "holiday park",
+    "UK holiday home manufacturers",
+  ],
+  openGraph: {
+    url: "https://petalwood.com",
+    type: "website",
+    title: "Grassholme Holiday Park",
+    description:
+      "Grassholme is a family ran holiday park, committed to providing a holiday ownership experience that is really special in terms of locations and service.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1530,
+        height: 804,
+        alt: "Explore The Area at Grassholme Holiday Park",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://petalwood.com",
+  },
 }
 
 export default function RootLayout({ children }) {
