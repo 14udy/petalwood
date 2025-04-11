@@ -1,7 +1,3 @@
-import { services } from "../data/services"
-import { blogs } from "../data/blogs"
-import { teamMembers } from "../data/teamMembers"
-
 export default function sitemap() {
   const today = new Date()
 
