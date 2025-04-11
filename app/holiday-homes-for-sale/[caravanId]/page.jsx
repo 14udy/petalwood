@@ -38,6 +38,64 @@ async function getCaravan(caravanId) {
   }
 }
 
+export async function generateMetadata({ params }) {
+  const caravan = await getCaravan(params.caravanId)
+
+  // Format price correctly for display
+  const formattedPrice =
+    caravan.price === 0
+      ? "POA"
+      : `£${new Intl.NumberFormat().format(caravan.price)}`
+
+  // Get the first image path for OG image
+  const firstImagePath =
+    caravan.images && caravan.images.length > 0
+      ? caravan.images[0].file_path
+      : "/assets/images/HolidayHomesForSale/hero.webp"
+
+  return {
+    title: `${caravan.name} | Holiday Homes For Sale | Grassholme Holiday Park`,
+    description: `${caravan.name} - ${caravan.size}, ${
+      caravan.beds
+    } bedroom holiday home. ${
+      caravan.short_description ||
+      "Quality holiday home for sale at Grassholme Holiday Park."
+    }`,
+    keywords: [
+      caravan.name,
+      `${caravan.beds} bedroom caravan`,
+      caravan.size,
+      "holiday home for sale",
+      "Grassholme Holiday Park",
+      "County Durham holiday home",
+      formattedPrice,
+      "static caravan",
+      "lodge for sale",
+      "Teesdale",
+      caravan.state === "NEW" ? "new caravan" : "pre-owned caravan",
+    ],
+    openGraph: {
+      url: `https://petalwood.com/holiday-homes-for-sale/${params.caravanId}`,
+      type: "website",
+      title: `${caravan.name} | Holiday Homes For Sale`,
+      description:
+        caravan.short_description ||
+        `${caravan.size}, ${caravan.beds} bedroom holiday home at Grassholme Holiday Park.`,
+      images: [
+        {
+          url: firstImagePath,
+          width: 1200,
+          height: 630,
+          alt: caravan.name,
+        },
+      ],
+    },
+    alternates: {
+      canonical: `https://petalwood.com/holiday-homes-for-sale/${params.caravanId}`,
+    },
+  }
+}
+
 export default async function page({ params }) {
   const pageParams = await params
   const caravan = await getCaravan(pageParams.caravanId)

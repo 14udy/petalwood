@@ -12,6 +12,45 @@ import waterfall from "@/public/assets/images/ExploreTheArea/waterfall.webp"
 import castle from "@/public/assets/images/ExploreTheArea/castle.webp"
 import hiking from "@/public/assets/images/ExploreTheArea/hiking.jpg"
 
+export const metadata = {
+  title: "Explore The Area | Grassholme Holiday Park",
+  description:
+    "Explore the stunning attractions and activities around Grassholme Holiday Park in County Durham. From scenic walks to historic landmarks, there's something for everyone.",
+  keywords: [
+    "Grassholme Holiday Park",
+    "County Durham attractions",
+    "explore the area",
+    "holiday activities",
+    "Teesdale walks",
+    "Barnard Castle",
+    "Low Force Waterfall",
+    "sailing club",
+    "hiking trails",
+    "family adventures",
+    "nature exploration",
+    "holiday destinations",
+    "North East England tourism",
+  ],
+  openGraph: {
+    url: "https://petalwood.com/explore-the-area",
+    type: "website",
+    title: "Explore The Area | Grassholme Holiday Park",
+    description:
+      "Discover the beauty of County Durham with Grassholme Holiday Park as your base. Explore reservoirs, waterfalls, castles, and more.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1530,
+        height: 804,
+        alt: "Explore The Area at Grassholme Holiday Park",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://petalwood.com/explore-the-area",
+  },
+}
+
 export default function page() {
   return (
     <div>

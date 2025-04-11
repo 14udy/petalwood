@@ -12,6 +12,46 @@ import castle from "@/public/assets/images/ExploreTheArea/castle.webp"
 import tranquil from "@/public/assets/images/OurPark/tranquil.webp"
 import holidayHomes from "@/public/assets/images/OurPark/holiday-homes.webp"
 
+export const metadata = {
+  title: "Our Park | Grassholme Holiday Park",
+  description:
+    "Discover our tranquil riverside retreat set in an Area of Outstanding Natural Beauty with countryside views, river view pitches, and easy access to Barnard Castle.",
+  keywords: [
+    "Grassholme Holiday Park",
+    "riverside retreat",
+    "holiday homes",
+    "Barnard Castle",
+    "Teesdale",
+    "countryside park",
+    "river view pitches",
+    "caravan holiday homes",
+    "Middleton-in-Teesdale",
+    "Dark Sky Discovery Site",
+    "Grassholme Reservoir",
+    "holiday home ownership",
+    "County Durham",
+    "countryside views",
+  ],
+  openGraph: {
+    url: "https://petalwood.com/our-park",
+    type: "website",
+    title: "Our Park | Grassholme Holiday Park",
+    description:
+      "A tranquil countryside park with riverside views near Barnard Castle offering holiday homes for every taste and budget.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1530,
+        height: 804,
+        alt: "Grassholme Holiday Park",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://petalwood.com/our-park",
+  },
+}
+
 export default function OurPark() {
   return (
     <div>

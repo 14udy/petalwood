@@ -19,11 +19,11 @@ export async function POST(req) {
   }
 
   try {
-    const resend = new Resend("re_JBDw1kSX_KGhGUH9iVvMA3JwbSmUQULSF")
+    const resend = new Resend("re_9ADMSzbU_Q3QjcdeGA5a5sVGt8ySqeZ59")
 
     const response = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "petalwooddb@gmail.com",
+      to: "hello@petalwood.co.uk",
       subject: "New Contact Form Submission",
       html: `
         <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 20px auto; border: 1px solid #ddd; padding: 20px; border-radius: 5px;">

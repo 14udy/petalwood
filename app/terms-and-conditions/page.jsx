@@ -1,5 +1,35 @@
 import React from "react"
 
+export const metadata = {
+  title: "Terms and Conditions | Petalwood",
+  description:
+    "Read the Terms and Conditions for using Petalwood's website. Understand your obligations when accessing or linking to our site.",
+  keywords: [
+    "terms and conditions",
+    "website usage",
+    "Petalwood terms",
+    "liability terms",
+  ],
+  openGraph: {
+    url: "https://petalwood.com/terms-and-conditions",
+    type: "website",
+    title: "Terms and Conditions | Petalwood",
+    description:
+      "Understand the terms and conditions of using Petalwood's website.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1530,
+        height: 804,
+        alt: "Explore The Area at Grassholme Holiday Park",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://petalwood.com/terms-and-conditions",
+  },
+}
+
 export default function TermsAndConditions() {
   return (
     <div className="container mx-auto px-4 py-8 mt-[70px]">

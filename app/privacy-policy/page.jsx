@@ -1,5 +1,29 @@
 import React from "react"
 
+export const metadata = {
+  title: "Privacy Policy | Petalwood",
+  description:
+    "Read the Privacy Policy for using Petalwood's website. Understand your obligations when accessing or linking to our site.",
+  keywords: ["privacy policy", "website usage", "Petalwood privacy"],
+  openGraph: {
+    url: "https://petalwood.com/privacy-policy",
+    type: "website",
+    title: "Privacy Policy | Petalwood",
+    description: "Understand the privacy policy of using Petalwood's website.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1530,
+        height: 804,
+        alt: "Explore The Area at Grassholme Holiday Park",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://petalwood.com/privacy-policy",
+  },
+}
+
 export default function PrivacyPolicy() {
   return (
     <div className="container mx-auto px-4 py-8 mt-[70px]">
@@ -9,10 +33,10 @@ export default function PrivacyPolicy() {
       <section className="mb-6">
         <h2 className="text-2xl font-semibold">1. Introduction</h2>
         <p>
-          Petalwood Limited (&apos;we&apos;, &apos;our&apos;, &apos;us&apos;). We are committed to protecting
-          and respecting your privacy. This Privacy Policy explains how we
-          collect, use, disclose, and safeguard your information when you visit
-          our website
+          Petalwood Limited (&apos;we&apos;, &apos;our&apos;, &apos;us&apos;).
+          We are committed to protecting and respecting your privacy. This
+          Privacy Policy explains how we collect, use, disclose, and safeguard
+          your information when you visit our website{" "}
           <a href="https://www.petalwood.co.uk" className="text-blue-500">
             www.petalwood.co.uk
           </a>{" "}
